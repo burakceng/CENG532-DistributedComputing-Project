@@ -89,9 +89,5 @@ message, i.e. packet with type 1.
 
 *****************************************************************
 EXECUTION UNDER A PACKET LOSS:
-- Every node multicasts a heartbeat message containing the smallest 
-sequence number that they are waiting for. This will help a group to 
-constitute a consensus on which sequence number should be multicast 
-to preserve the total-order on the network by maintaining total-order 
-in each sub-group.
+- To be filled ...
 *****************************************************************
