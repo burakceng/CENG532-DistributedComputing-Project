@@ -254,12 +254,10 @@ class MulticastNode:
 
 			return False
 
-		#while not self.comm_state[peerName]:
 		while True:
 
-			#if self.sequence_number >= len(self.seq_list):
-			#	self.finish(peerName)
-			#	break
+			if self.sequence_number >= len(self.seq_list):
+				self.state = (Mode.FINISH, self.state[1], self.state[2])
 
 			try:
 
@@ -271,10 +269,8 @@ class MulticastNode:
 					if self.state[0] == Mode.D_CAST:
 						continue
 
-					if _alreadyProcessed(data['SequenceNumber'], self.delivered_nums[peerName]):
-						continue
-
-					if not _alreadyInQueue(data['SequenceNumber'], self.queue):
+					if (not _alreadyProcessed(data['SequenceNumber'], self.delivered_nums[peerName]) and 
+						not _alreadyInQueue(data['SequenceNumber'], self.queue)):
 						self.queue_mtx.acquire()
 						heapq.heappush(self.queue, (data['Timestamp'], data['LocalOrder'], data))
 						self.queue_mtx.release()
@@ -290,9 +286,6 @@ class MulticastNode:
 
 				elif t == 2:
 					# Regular Multicast ACK
-					if self.ack_table[peerName]:
-						continue
-
 					if data['SequenceNumber'] != self.seq_list[self.sequence_number]:
 
 						self.createLog("{} - Packet Loss. Retransmission...".format(self.node_name))
@@ -315,14 +308,12 @@ class MulticastNode:
 
 				elif t == 4:
 					# Deliver Request
-					if _alreadyProcessed(data['SequenceNumber'], self.delivered_nums[peerName]):
-						continue
-
-					receipt = time.time()
-					self.createLog("{0} - DELIVER Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
+					if not _alreadyProcessed(data['SequenceNumber'], self.delivered_nums[peerName]):
+						receipt = time.time()
+						self.createLog("{0} - DELIVER Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
 										receipt, receipt - data['Timestamp']))
 
-					self.deliver()
+						self.deliver()
 
 					serialized_msg = self.makePacket(8, data['SequenceNumber'])
 					sockHandle.sendto(serialized_msg, peerAddr)
@@ -343,7 +334,6 @@ class MulticastNode:
 
 						self.total_order_mutex.acquire()
 						self.sequence_number += 1
-						print "{0} :: sequence_number = {1}".format(self.node_name, self.sequence_number)
 						self.state = (Mode.M_CAST, self.sequence_number, 
 									data['SequenceNumber'] if len(self.seq_list) <= self.sequence_number else self.seq_list[self.sequence_number])
 						self.total_order_mutex.release()
@@ -382,6 +372,9 @@ class MulticastNode:
 					serialized_msg = self.makePacket(4, data['SequenceNumber'], order=data['LocalOrder'])
 					sockHandle.sendto(serialized_msg, peerAddr)
 
+				elif self.state[0] == Mode.FINISH:
+					self.createLog("{} - DONE.".format(self.node_name))
+
 			except Exception as e:
 				print traceback.format_exc()
 				raise e
@@ -408,7 +401,7 @@ class MulticastNode:
 		logger.close()
 
 	def run(self):
-		self.createLog("{} - Starting...".format(self.node_name))
+		self.createLog("{0} - Starting with {1}...".format(self.node_name, self.seq_list))
 
 		workers = []
 		for node, peer in self.interfaces.iteritems():
@@ -423,14 +416,17 @@ class MulticastNode:
 		#	self.multicast(16, 0)
 		#	time.sleep(self.period)
 
+		o = 0
 		for num in self.seq_list:
 			self.clock_mtx.acquire()
 			self.clock[self.node_name] += 1
 			self.clock_mtx.release()
 
-			self.multicast(1, num, order=self.sequence_number)
+			#self.multicast(1, num, order=self.sequence_number)
+			self.multicast(1, num, order=o)
 
 			time.sleep(self.period)
+			o += 1
 
 		"""
 		step = 1

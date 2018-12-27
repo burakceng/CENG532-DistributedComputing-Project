@@ -26,10 +26,8 @@ if __name__ == '__main__':
 		packet_numbers = sorted(np.random.choice(sequence_list, size=number_of_packets_per_node, replace=False))
 		node_name = 'N%d' % (i + 1)
 
-		nodes[node_name] = MulticastNode(node_name, packet_numbers, topology, period)
-		#nodes[node_name] = MulticastNode(node_name, packet_numbers, topology, period, logFile="LOG_" + node_name + ".txt")
-
-		print "Node: {0} Packets: {1}".format(node_name, packet_numbers)
+		#nodes[node_name] = MulticastNode(node_name, packet_numbers, topology, period)
+		nodes[node_name] = MulticastNode(node_name, packet_numbers, topology, period, logFile="LOG_" + node_name + ".txt")
 
 		for j in packet_numbers:
 			sequence_list.remove(j)
