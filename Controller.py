@@ -1,6 +1,5 @@
-from Node import *
 import os
-import numpy as np
+from Node import *
 
 # Every group has 2 receiver nodes and 1 sender node
 topology2 = {'N1': {'N2': ('127.0.0.1', 20001), 'N4': ('127.0.0.1', 40001)},
@@ -36,18 +35,17 @@ if __name__ == '__main__':
 			sequence_list.remove(j)
 
 	for k, v in nodes.iteritems():
-		threading.Thread(group=None, target=v.run(), name='T_' + k, args=(v,)).start()
-		"""
 		pid = os.fork()
 		if pid == 0:
 			v.run()
+			while not v.isClosed():
+				time.sleep(1)
 		else:
-			processes[k] = 
-		"""
+			print "{} - Child forked.".format(k)
 
 	start = time.time()
 	while not all(map(lambda x: x.isClosed(), nodes.values())):
-		continue
+		time.sleep(1)
 
 	"""
 	for k, v in nodes.iteritems():

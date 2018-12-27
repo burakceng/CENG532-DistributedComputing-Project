@@ -7,6 +7,7 @@ import pickle
 import datetime
 import traceback
 import threading
+import numpy as np
 
 """
 *****************************************************************
@@ -114,6 +115,7 @@ class Mode(enum.Enum):
 	M_CAST = 1
 	D_CAST = 2
 	HEARTBEAT = 3
+	FINISH = 4
 
 	@staticmethod
 	def getModeAsInt(mode):
@@ -128,6 +130,9 @@ class Mode(enum.Enum):
 
 		elif mode == Mode.HEARTBEAT:
 			return 3
+
+		elif mode == Mode.FINISH:
+			return 4
 
 class MulticastNode:
 
@@ -216,13 +221,14 @@ class MulticastNode:
 		deliverable = heapq.heappop(self.queue)
 		self.queue_mtx.release()
 
+		delivery_stamp = time.time()
 		self.createLog("{0} - Delivering {1}, Received at: {2}...".format(self.node_name, deliverable[2]['SequenceNumber'], 
-																							deliverable[2]['Timestamp']))
+																				deliverable[2]['Timestamp']))
 
 		self.updateClock(deliverable[2]['Vector'])
 
 		self.total_order_mutex.acquire()
-		self.delivered_nums[deliverable[2]['Source']].append((deliverable[0], deliverable[1], deliverable[2]['SequenceNumber']))
+		self.delivered_nums[deliverable[2]['Source']].append((deliverable[0], deliverable[1], deliverable[2]['SequenceNumber'], delivery_stamp))
 		self.total_order_mutex.release()
 
 		self.createLog("{0} - Deliver {1} OK - Source: {2}.".format(self.node_name, deliverable[2]['SequenceNumber'], deliverable[2]['Source']))
@@ -248,7 +254,8 @@ class MulticastNode:
 
 			return False
 
-		while not self.comm_state[peerName]:
+		#while not self.comm_state[peerName]:
+		while True:
 
 			#if self.sequence_number >= len(self.seq_list):
 			#	self.finish(peerName)
@@ -261,6 +268,9 @@ class MulticastNode:
 
 				if t == 1:
 					# Regular Multicast message with data
+					if self.state[0] == Mode.D_CAST:
+						continue
+
 					if _alreadyProcessed(data['SequenceNumber'], self.delivered_nums[peerName]):
 						continue
 
@@ -366,21 +376,19 @@ class MulticastNode:
 					self.createLog("{0} - Socket Timeout in M_CAST mode. Destination: {1}".format(self.node_name, peerName))
 					serialized_msg = self.makePacket(1, data['SequenceNumber'], order=data['LocalOrder'], old_stamp=data['Timestamp'])
 					sockHandle.sendto(serialized_msg, peerAddr)
-					#self.createLog("{0} - (M_CAST mode) Socket for node {1} is open?: {2}".format(self.node_name, peerName, self.sock_state[peerName]))
 
 				elif self.state[0] == Mode.D_CAST:
 					self.createLog("{0} - Socket Timeout in D_CAST mode. Destination: {1}".format(self.node_name, peerName))
 					serialized_msg = self.makePacket(4, data['SequenceNumber'], order=data['LocalOrder'])
 					sockHandle.sendto(serialized_msg, peerAddr)
-					#self.createLog("{0} - (D_CAST mode) Socket for node {1} is open?: {2}".format(self.node_name, peerName, self.sock_state[peerName]))
 
 			except Exception as e:
 				print traceback.format_exc()
 				raise e
 
-		self.socks[peerName].close()
-		self.comm_state[peerName] = True
-		self.createLog("{0} - Socket for {1} is closed.".format(self.node_name, peerName))
+		#self.socks[peerName].close()
+		#self.comm_state[peerName] = True
+		#self.createLog("{0} - Socket for {1} is closed.".format(self.node_name, peerName))
 
 		return
 
@@ -393,7 +401,8 @@ class MulticastNode:
 
 		for k, v in self.delivered_nums.iteritems():
 			for item in v:
-				logger.write("From: {0} - TimeStamp: {1} - Local Order: {2} - Sequence Number: {3}.\n".format(k, item[0], item[1], item[2]))
+				logger.write("From: {0} - TimeStamp: {1} - Local Order: {2} - Sequence Number: {3} - Delivered: {4}.\n".format(k, 
+								item[0], item[1], item[2], item[3]))
 
 		logger.write('\n')
 		logger.close()
@@ -401,8 +410,13 @@ class MulticastNode:
 	def run(self):
 		self.createLog("{} - Starting...".format(self.node_name))
 
+		workers = []
 		for node, peer in self.interfaces.iteritems():
 			threading.Thread(group=None, target=self.onReceive, name="onReceive_" + node, args=(self.socks[node], node, peer)).start()
+			#workers.append(threading.Thread(group=None, target=self.onReceive, name="onReceive_" + node, args=(self.socks[node], node, peer)))
+
+		#for w in workers:
+		#	w.start()
 
 		#while not all(self.ready.values()):
 		#	self.state = (Mode.HEARTBEAT, -1, 0)
@@ -436,6 +450,9 @@ class MulticastNode:
 			step += 1
 		"""
 
+		#for w in workers:
+		#	w.join()
+
 	def finish(self, peerName):
 		self.createLog("{} - Finished. Cleaning up...".format(self.node_name))
 
@@ -443,7 +460,6 @@ class MulticastNode:
 			self.finished = True
 			self.closed = True
 			self.bcSock.close()
-			#self.writer.close()
 
 	def createLog(self, log):
 		global GLOBAL_PRINT_LOCK
