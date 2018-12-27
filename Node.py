@@ -142,6 +142,7 @@ class MulticastNode:
 		self.total_order_mutex = threading.Lock()
 		self.logging_mtx = threading.Lock()
 		self.heartbeat_mtx = threading.Lock()
+		self.writer_lock = threading.Lock()
 
 		self.id = int(name[-1])
 		self.node_name = name
@@ -167,6 +168,8 @@ class MulticastNode:
 		self.clock = dict()
 		self.queue = []
 
+		self.consensus = dict()
+
 		self.network = topology
 		self.interfaces = topology[self.node_name]
 		for i, k in enumerate(topology):
@@ -182,6 +185,9 @@ class MulticastNode:
 			self.del_ack_table[node_] = False
 			self.sock_state[node_] = True
 			self.ready[node_] = False
+			self.consensus[node_] = dict()
+			for num in self.seq_list:
+				self.consensus[node_][str(num)] = False
 
 		self.bcSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 		self.bcSock.bind(('127.0.0.1', self.id * 10000))
@@ -212,14 +218,21 @@ class MulticastNode:
 		serialized_msg = self.makePacket(mType, num, order)
 
 		for node in self.interfaces:
-			self.socks[node].settimeout(2 * self.period)
+			self.socks[node].settimeout(10 * self.period)
 			self.socks[node].sendto(serialized_msg, self.interfaces[node])
 			self.createLog("{0} - MCAST {1} to node {2}.".format(self.node_name, num, node))
+			time.sleep(0.5)
 
 	def deliver(self):
+		if not self.queue:
+			return
+
 		self.queue_mtx.acquire()
 		deliverable = heapq.heappop(self.queue)
 		self.queue_mtx.release()
+
+		if self._alreadyProcessed(deliverable[2]['SequenceNumber']):
+			return
 
 		delivery_stamp = time.time()
 		self.createLog("{0} - Delivering {1}, Received at: {2}...".format(self.node_name, deliverable[2]['SequenceNumber'], 
@@ -240,13 +253,6 @@ class MulticastNode:
 
 	def onReceive(self, sockHandle, peerName, peerAddr):
 
-		def _alreadyProcessed(seq_num, msg_list):
-			for i in msg_list:
-				if i[2] == seq_num:
-					return True
-
-			return False
-
 		def _alreadyInQueue(seq_num, msg_list):
 			for entry in msg_list:
 				if entry[2]['SequenceNumber'] == seq_num:
@@ -256,7 +262,7 @@ class MulticastNode:
 
 		while True:
 
-			if self.sequence_number >= len(self.seq_list):
+			if self.finishConsensus() and self.sequence_number >= len(self.seq_list):
 				self.state = (Mode.FINISH, self.state[1], self.state[2])
 
 			try:
@@ -269,8 +275,7 @@ class MulticastNode:
 					if self.state[0] == Mode.D_CAST:
 						continue
 
-					if (not _alreadyProcessed(data['SequenceNumber'], self.delivered_nums[peerName]) and 
-						not _alreadyInQueue(data['SequenceNumber'], self.queue)):
+					if not self._alreadyProcessed(data['SequenceNumber']) and not _alreadyInQueue(data['SequenceNumber'], self.queue):
 						self.queue_mtx.acquire()
 						heapq.heappush(self.queue, (data['Timestamp'], data['LocalOrder'], data))
 						self.queue_mtx.release()
@@ -308,12 +313,13 @@ class MulticastNode:
 
 				elif t == 4:
 					# Deliver Request
-					if not _alreadyProcessed(data['SequenceNumber'], self.delivered_nums[peerName]):
+					if not self._alreadyProcessed(data['SequenceNumber']):
 						receipt = time.time()
 						self.createLog("{0} - DELIVER Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
 										receipt, receipt - data['Timestamp']))
 
 						self.deliver()
+						time.sleep(1.0)
 
 					serialized_msg = self.makePacket(8, data['SequenceNumber'])
 					sockHandle.sendto(serialized_msg, peerAddr)
@@ -325,8 +331,10 @@ class MulticastNode:
 
 					receipt = time.time()
 					self.del_ack_table[peerName] = True
-					self.createLog("{0} - DELIVER ACK Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
-										receipt, receipt - data['Timestamp']))
+					self.createLog("{0} - DELIVER ACK Received from {1} {2} USEFUL - Stamp: {3}, Diff: {4}".format(self.node_name, data['Source'], 
+																					data['SequenceNumber'], receipt, receipt - data['Timestamp']))
+
+					self.consensus[peerName][str(data['SequenceNumber'])] = True
 
 					if all(self.ack_table.values()) and all(self.del_ack_table.values()):
 						self.ack_table = dict.fromkeys(self.ack_table, False)
@@ -386,7 +394,7 @@ class MulticastNode:
 		return
 
 	def logDeliveredMsgs(self):
-		logger = open('DeliveryLog_' + self.node_name + ".txt", 'a')
+		logger = open('DeliveryLog_' + self.node_name + ".txt", 'w')
 
 		logger.write("--------------------------------------------------\n")
 		logger.write(str(datetime.datetime.now()) + '\n')
@@ -410,11 +418,6 @@ class MulticastNode:
 
 		#for w in workers:
 		#	w.start()
-
-		#while not all(self.ready.values()):
-		#	self.state = (Mode.HEARTBEAT, -1, 0)
-		#	self.multicast(16, 0)
-		#	time.sleep(self.period)
 
 		o = 0
 		for num in self.seq_list:
@@ -457,13 +460,22 @@ class MulticastNode:
 			self.closed = True
 			self.bcSock.close()
 
+	def finishConsensus(self):
+		for k, v in self.consensus.iteritems():
+			if not all(v.values()):
+				return False
+
+		return True
+
 	def createLog(self, log):
 		global GLOBAL_PRINT_LOCK
 
 		if self.logging:
+			self.writer_lock.acquire()
 			self.writer = open(self.logging, 'a')
 			self.writer.write(log + "\n")
 			self.writer.close()
+			self.writer_lock.release()
 
 		else:
 			GLOBAL_PRINT_LOCK.acquire()
@@ -472,6 +484,14 @@ class MulticastNode:
 
 	def isClosed(self):
 		return self.closed
+
+	def _alreadyProcessed(self, seq_num):
+		for n, v in self.delivered_nums.iteritems():
+			for item in v:
+				if item[2] == seq_num:
+					return True
+
+		return False or (seq_num in self.seq_list)
 
 	"""
 	def isLocalOrderPreserved(self):
