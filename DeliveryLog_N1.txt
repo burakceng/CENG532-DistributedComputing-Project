@@ -1,7 +1,8 @@
 --------------------------------------------------
-2018-12-27 22:10:59.049116
+2018-12-28 17:09:33.752189
 --------------------------------------------------
-From: N2 - TimeStamp: 1545937857.04 - Local Order: 0 - Sequence Number: 4 - Delivered: 1545937857.04.
-From: N2 - TimeStamp: 1545937859.04 - Local Order: 1 - Sequence Number: 5 - Delivered: 1545937859.05.
-From: N4 - TimeStamp: 1545937857.04 - Local Order: 0 - Sequence Number: 2 - Delivered: 1545937857.04.
+From: N2 - TimeStamp: 1546006171.74 - Sequence Number: 7 - Delivered: 1546006171.75.
+From: N2 - TimeStamp: 1546006173.75 - Sequence Number: 8 - Delivered: 1546006173.75.
+From: N4 - TimeStamp: 1546006171.74 - Sequence Number: 2 - Delivered: 1546006171.75.
+From: N4 - TimeStamp: 1546006173.75 - Sequence Number: 10 - Delivered: 1546006173.75.
 
