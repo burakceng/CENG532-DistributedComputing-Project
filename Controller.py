@@ -1,5 +1,6 @@
 import os
 from Node import *
+import xml.etree.ElementTree as ET
 
 # Every group has 2 receiver nodes and 1 sender node
 topology2 = {'N1': {'N2': ('127.0.0.1', 20001), 'N4': ('127.0.0.1', 40001)},
@@ -11,15 +12,34 @@ topology2 = {'N1': {'N2': ('127.0.0.1', 20001), 'N4': ('127.0.0.1', 40001)},
 
 # TODO: ADD MORE LOGICAL TOPOLOGIES
 
+def parseTopology(topoFile):
+	topology = dict()
+	topo = ET.parse(topoFile).getroot()
+	for node in topo:
+		name = node.attrib['name']
+		topology[name] = dict()
+		for intf in node:
+			intf_to = intf.attrib['name']
+			ip_addr = intf.attrib['IP']
+			port_no = int(intf.attrib['port'])
+			topology[name][intf_to] = (ip_addr, port_no)
+
+	return topology
+
 if __name__ == '__main__':
 
+	argc = len(sys.argv)
 	number_of_packets_per_node = 2
 	number_of_nodes = int(sys.argv[1])
 	period = float(sys.argv[2])
 
 	nodes = dict()
-	topology = topology2
-	processes = dict()
+
+	if argc > 3:
+		topology = parseTopology(sys.argv[3])
+
+	else:
+		topology = topology2
 
 	sequence_list = range(1, number_of_nodes * number_of_packets_per_node + 1)
 	for i in xrange(number_of_nodes):
