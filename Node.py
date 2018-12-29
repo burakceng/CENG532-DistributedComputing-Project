@@ -536,3 +536,31 @@ class MulticastNode:
 
 		return True
 	"""
+
+def parseTopology(topoFile):
+	topology = dict()
+	topo = ET.parse(topoFile).getroot()
+	for node in topo:
+		name = node.attrib['name']
+		topology[name] = dict()
+		for intf in node:
+			intf_to = intf.attrib['name']
+			ip_addr = intf.attrib['IP']
+			port_no = int(intf.attrib['port'])
+			topology[name][intf_to] = (ip_addr, port_no)
+
+	return topology
+
+if __name__ == '__main__':
+
+	name = sys.argv[1]
+	count = int(sys.argv[2])
+	slist = map(int, sys.argv[3:count + 3])
+	period = float(sys.argv[count + 3])
+	topoFile = sys.argv[count + 4]
+	dpoisson = (sys.argv[count + 5] == 'True')
+	logFile = sys.argv[count + 6]
+
+	topology = parseTopology(topoFile)
+	this_node = MulticastNode(name, slist, topology, period, logFile, dpoisson)
+	this_node.run()

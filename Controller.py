@@ -29,7 +29,7 @@ def parseTopology(topoFile):
 if __name__ == '__main__':
 
 	argc = len(sys.argv)
-	number_of_packets_per_node = 2
+	number_of_packets_per_node = 10
 	number_of_nodes = int(sys.argv[1])
 	period = float(sys.argv[2])
 
