@@ -7,6 +7,7 @@ from mininet.log import setLogLevel
 from mininet.node import CPULimitedHost
 from mininet.link import TCLink
 import numpy as np
+import sys, os, time
 
 class Topology(Topo):
 	# The topology consists of 1 switch in the middle, 1 controller and 5 hosts in a star topology.
@@ -55,17 +56,28 @@ if __name__ == '__main__':
 		for j in packet_numbers:
 			sequence_list.remove(j)
 	
-	initTopo()
+	topo = Topology(n=5)
+	net = Mininet(topo, host=CPULimitedHost, link=TCLink)
+	net.start()
 
-	h1.cmd('sudo python h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
-	h2.cmd('sudo python h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h2.txt')
-	h3.cmd('sudo python h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h3.txt')
-	h4.cmd('sudo python h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h4.txt')
-	h5.cmd('sudo python h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h5.txt')
+	h1 = net.get('h1')
+	h2 = net.get('h2')
+	h3 = net.get('h3')
+	h4 = net.get('h4')
+	h5 = net.get('h5')
+
+	result = h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
+	print result
+	h2.cmd('sudo python Node.py h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h2.txt')
+	h3.cmd('sudo python Node.py h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h3.txt')
+	h4.cmd('sudo python Node.py h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h4.txt')
+	h5.cmd('sudo python Node.py h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h5.txt')
 	
 	
+	time.sleep(10)
+	result = h1.cmd('ps')
+	print result
+	time.sleep(1)
 	
-	
-	
-	
+		
 	
