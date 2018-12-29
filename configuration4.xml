@@ -1,35 +1,35 @@
 <root>
 
         <!-- Each node has 4 receiving neighbours; hence, group size = 4, i.e. became broadcast -->
-        <h1>
-                <node IP = "10.0.0.2" port = "20001" />
-                <node IP = "10.0.0.3" port = "30001" />
-                <node IP = "10.0.0.4" port = "40001" />
-                <node IP = "10.0.0.5" port = "50001" />
+        <h1 name="h1">
+                <node name="h2" IP = "10.0.0.2" port = "20001" />
+                <node name="h3" IP = "10.0.0.3" port = "30001" />
+                <node name="h4" IP = "10.0.0.4" port = "40001" />
+                <node name="h5" IP = "10.0.0.5" port = "50001" />
         </h1>
-        <h2>
-                <node IP = "10.0.0.1" port = "10002" />
-                <node IP = "10.0.0.3" port = "30002" />
-                <node IP = "10.0.0.4" port = "40002" />
-                <node IP = "10.0.0.5" port = "50002" />
+        <h2 name="h2">
+                <node name="h1" IP = "10.0.0.1" port = "10002" />
+                <node name="h3" IP = "10.0.0.3" port = "30002" />
+                <node name="h4" IP = "10.0.0.4" port = "40002" />
+                <node name="h5" IP = "10.0.0.5" port = "50002" />
         </h2>
-        <h3>
-                <node IP = "10.0.0.1" port = "10003" />
-                <node IP = "10.0.0.2" port = "20003" />
-                <node IP = "10.0.0.4" port = "40003" />
-                <node IP = "10.0.0.5" port = "50003" />
+        <h3 name="h3">
+                <node name="h1" IP = "10.0.0.1" port = "10003" />
+                <node name="h2" IP = "10.0.0.2" port = "20003" />
+                <node name="h4" IP = "10.0.0.4" port = "40003" />
+                <node name="h5" IP = "10.0.0.5" port = "50003" />
         </h3>
-        <h4>
-                <node IP = "10.0.0.1" port = "10004" />
-                <node IP = "10.0.0.2" port = "20004" />
-                <node IP = "10.0.0.3" port = "30004" />
-                <node IP = "10.0.0.5" port = "50004" />
+        <h4 name="h4">
+                <node name="h1" IP = "10.0.0.1" port = "10004" />
+                <node name="h2" IP = "10.0.0.2" port = "20004" />
+                <node name="h3" IP = "10.0.0.3" port = "30004" />
+                <node name="h5" IP = "10.0.0.5" port = "50004" />
         </h4>
-        <h5>
-                <node IP = "10.0.0.1" port = "10005" />
-                <node IP = "10.0.0.2" port = "20005" />
-                <node IP = "10.0.0.3" port = "30005" />
-                <node IP = "10.0.0.4" port = "40005" />
+        <h5 name="h5">
+                <node name="h1" IP = "10.0.0.1" port = "10005" />
+                <node name="h2" IP = "10.0.0.2" port = "20005" />
+                <node name="h3" IP = "10.0.0.3" port = "30005" />
+                <node name="h4" IP = "10.0.0.4" port = "40005" />
         </h5>
 
 </root>
