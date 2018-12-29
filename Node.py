@@ -169,7 +169,9 @@ class MulticastNode:
 		self.clock = dict()
 		self.queue = []
 
-		self.consensus = dict()
+		self.finish_consensus = dict()
+		#self.order_consensus = dict()
+		#self.stamps = dict()
 
 		self.network = topology
 		self.interfaces = topology[self.node_name]
@@ -187,9 +189,11 @@ class MulticastNode:
 			self.sock_state[node_] = True
 			self.ready[node_] = False
 
-			self.consensus[node_] = dict()
+			#self.order_consensus[node_] = [False] * len(self.seq_list)
+
+			self.finish_consensus[node_] = dict()
 			for num in self.seq_list:
-				self.consensus[node_][str(num)] = False
+				self.finish_consensus[node_][str(num)] = False
 
 		self.bcSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 		self.bcSock.bind(('127.0.0.1', self.id * 10000))
@@ -213,6 +217,9 @@ class MulticastNode:
 				'Timestamp': time.time() if not old_stamp else old_stamp, 
 				'Vector': self.clock }
 
+		#if not self.stamps.get((pType, seq)):
+		#	self.stamps[(pType, seq)] = data['Timestamp']
+
 		return pickle.dumps(data)
 
 	def multicast(self, mType, num, order=None):
@@ -233,6 +240,7 @@ class MulticastNode:
 		deliverable = heapq.heappop(self.queue)
 		self.queue_mtx.release()
 
+		#if self._alreadyProcessed(deliverable[2]['SequenceNumber']) or deliverable[2]['LocalOrder'] >= len(self.seq_list):
 		if self._alreadyProcessed(deliverable[2]['SequenceNumber']):
 			return
 
@@ -244,6 +252,7 @@ class MulticastNode:
 
 		#self.total_order_mutex.acquire()
 		self.delivered_nums[deliverable[2]['Source']].append((deliverable[0], deliverable[1], deliverable[2]['SequenceNumber'], delivery_stamp))
+		#self.order_consensus[deliverable[2]['Source']][deliverable[2]['LocalOrder']] = True
 		#self.total_order_mutex.release()
 
 		self.createLog("{0} - Deliver {1} OK - Source: {2}.".format(self.node_name, deliverable[2]['SequenceNumber'], deliverable[2]['Source']))
@@ -264,7 +273,8 @@ class MulticastNode:
 
 		while True:
 
-			if self.finishConsensus() and self.sequence_number >= len(self.seq_list):
+			#if self.finishConsensus() and self.sequence_number >= len(self.seq_list):
+			if self.finishConsensus():
 				self.state = (Mode.FINISH, self.state[1], self.state[2])
 
 			try:
@@ -293,13 +303,18 @@ class MulticastNode:
 
 				elif t == 2:
 					# Regular Multicast ACK
-					#if (not self.consensus[peerName][str(data['SequenceNumber'])] and 
-					#	data['SequenceNumber'] != self.seq_list[self.sequence_number]):
+					if self.sequence_number >= len(self.seq_list):
+						to_be_checked = self.state[2]
 
-					if data['SequenceNumber'] != self.seq_list[self.sequence_number]:
+					else:
+						to_be_checked = self.seq_list[self.sequence_number]
+
+					if data['SequenceNumber'] != to_be_checked:
 						self.createLog("{} - Packet Loss. Retransmission...".format(self.node_name))
 
-						serialized_msg = self.makePacket(1, self.seq_list[self.sequence_number])
+						#serialized_msg = self.makePacket(1, self.seq_list[self.sequence_number])
+						serialized_msg = self.makePacket(1, to_be_checked)
+						#serialized_msg = self.makePacket(1, to_be_checked, old_stamp=self.stamps[(1, to_be_checked)])
 						sockHandle.sendto(serialized_msg, peerAddr)
 
 					else:
@@ -309,18 +324,23 @@ class MulticastNode:
 						self.createLog("{0} - M_CAST ACK Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
 											receipt, receipt - data['Timestamp']))
 
-						serialized_msg = self.makePacket(4, data['SequenceNumber'], order=data['LocalOrder'])
-						sockHandle.sendto(serialized_msg, peerAddr)
+						#serialized_msg = self.makePacket(4, data['SequenceNumber'], order=data['LocalOrder'])
+						#serialized_msg = self.makePacket(4, data['SequenceNumber'])
+						#sockHandle.sendto(serialized_msg, peerAddr)
 
 						if all(self.ack_table.values()):
 							self.state = (Mode.D_CAST, self.sequence_number, data['SequenceNumber'])
-							#self.multicast(4, data['SequenceNumber'], order=data['LocalOrder'])
+							self.multicast(4, data['SequenceNumber'])
 
 				elif t == 4:
 					# Deliver Request
 					receipt = time.time()
 					self.createLog("{0} - DELIVER Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
 									receipt, receipt - data['Timestamp']))
+
+					#if not all(self.order_consensus[data['Source']][:data['LocalOrder']]):
+					#	self.createLog("{0} - Local Order is not consistent w.r.to node {1}.".format(self.node_name, data['Source']))
+					#	continue
 
 					self.total_order_mutex.acquire()
 					self.deliver()
@@ -341,7 +361,7 @@ class MulticastNode:
 					self.createLog("{0} - DELIVER ACK Received from {1} {2} USEFUL - Stamp: {3}, Diff: {4}".format(self.node_name, data['Source'], 
 																					data['SequenceNumber'], receipt, receipt - data['Timestamp']))
 
-					self.consensus[data['Source']][str(data['SequenceNumber'])] = True
+					self.finish_consensus[data['Source']][str(data['SequenceNumber'])] = True
 
 					if all(self.ack_table.values()) and all(self.del_ack_table.values()):
 						self.ack_table = dict.fromkeys(self.ack_table, False)
@@ -352,6 +372,15 @@ class MulticastNode:
 						self.state = (Mode.M_CAST, self.sequence_number, 
 									data['SequenceNumber'] if len(self.seq_list) <= self.sequence_number else self.seq_list[self.sequence_number])
 						self.total_order_mutex.release()
+
+						consent = True
+						for node, cons in self.finish_consensus.iteritems():
+							if not cons.get(str(data['SequenceNumber'])):
+								consent = False
+								break
+
+						if consent:
+							self.createLog("{0} - Gave consent that {1} is total-order delivered.".format(self.node_name, data['SequenceNumber']))
 
 				elif t == 16:
 					# Heartbeat message
@@ -465,7 +494,7 @@ class MulticastNode:
 			self.bcSock.close()
 
 	def finishConsensus(self):
-		for k, v in self.consensus.iteritems():
+		for k, v in self.finish_consensus.iteritems():
 			if not all(v.values()):
 				return False
 
