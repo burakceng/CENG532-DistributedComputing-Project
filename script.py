@@ -44,11 +44,11 @@ if __name__ == '__main__':
 	topo_type = int(sys.argv[2])
 	period = float(sys.argv[3])
 	poisson = sys.argv[4]
-	
+
 	sequence_list = range(1, 5 * packets_per_node + 1)
-	
+
 	sequence_dict = {}
-	
+
 	for i in xrange(5):
 		packet_numbers = sorted(np.random.choice(sequence_list, size=packets_per_node, replace=False))
 		node_name = 'h%d' % (i + 1)
@@ -60,24 +60,28 @@ if __name__ == '__main__':
 	net = Mininet(topo, host=CPULimitedHost, link=TCLink)
 	net.start()
 
-	h1 = net.get('h1')
-	h2 = net.get('h2')
-	h3 = net.get('h3')
-	h4 = net.get('h4')
-	h5 = net.get('h5')
+	for i in xrange(5):
+		node = 'h%d' % (i + 1)
+		pid = os.fork()
+		if pid == 0:
+			start_time = time.time()
+			h_i = net.get(node)
+			h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
+			while time.time() - start_time:
+				time.sleep(1)
+		else:
+			print "{} - child forked.".format(node)
 
-	result = h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
-	print result
-	h2.cmd('sudo python Node.py h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h2.txt')
-	h3.cmd('sudo python Node.py h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h3.txt')
-	h4.cmd('sudo python Node.py h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h4.txt')
-	h5.cmd('sudo python Node.py h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h5.txt')
-	
-	
-	time.sleep(10)
-	result = h1.cmd('ps')
-	print result
-	time.sleep(1)
-	
-		
-	
+	#h1 = net.get('h1')
+	#h2 = net.get('h2')
+	#h3 = net.get('h3')
+	#h4 = net.get('h4')
+	#h5 = net.get('h5')
+
+	#result = h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
+	#print result
+	#h2.cmd('sudo python Node.py h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h2.txt')
+	#h3.cmd('sudo python Node.py h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h3.txt')
+	#h4.cmd('sudo python Node.py h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h4.txt')
+	#h5.cmd('sudo python Node.py h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h5.txt')
+
