@@ -66,7 +66,7 @@ if __name__ == '__main__':
 		if pid == 0:
 			start_time = time.time()
 			h_i = net.get(node)
-			h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
+			h_i.cmd('sudo python Node.py ' + h_i + ' ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
 			while time.time() - start_time:
 				time.sleep(1)
 		else:
