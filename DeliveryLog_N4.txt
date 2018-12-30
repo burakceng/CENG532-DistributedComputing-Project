@@ -1,8 +1,0 @@
---------------------------------------------------
-2018-12-28 17:09:39.261128
---------------------------------------------------
-From: N1 - TimeStamp: 1546006171.74 - Sequence Number: 3 - Delivered: 1546006172.25.
-From: N1 - TimeStamp: 1546006173.74 - Sequence Number: 9 - Delivered: 1546006178.76.
-From: N5 - TimeStamp: 1546006171.74 - Sequence Number: 4 - Delivered: 1546006172.75.
-From: N5 - TimeStamp: 1546006179.26 - Sequence Number: 6 - Delivered: 1546006179.26.
-
