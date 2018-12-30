@@ -491,6 +491,25 @@ class MulticastNode:
 		logger.write('\n')
 		logger.close()
 
+	def logStatistics(self):
+		logger = open('Statistics_' + self.node_name + ".txt", 'a')
+
+		logger.write("--------------------------------------------------\n")
+		logger.write(str(datetime.datetime.now()) + '\n')
+		logger.write("--------------------------------------------------\n")
+
+		_count, _upayload, _tpayload, _total_time = this_node.getStatistics()
+
+		logger.write("Node:          ", name)
+		logger.write("Count:         ", _count)
+		logger.write("Useful payload:", _upayload)
+		logger.write("Total payload: ", _tpayload)
+		logger.write("Total time:    ", _total_time)
+		logger.write("Avg. time:     ", float(_total_time) / _count)
+
+		logger.write('\n')
+		logger.close()
+
 	def run(self):
 		self.createLog("{0} - Starting with {1}...".format(self.node_name, self.seq_list))
 
@@ -598,21 +617,8 @@ if __name__ == '__main__':
 	this_node = MulticastNode(name, slist, topology, period, logFile, dpoisson)
 	this_node.run()
 
-	#_count, _upayload, _tpayload, _total_time = this_node.getStatistics()
-
-	#print "--------------------------STATISTICS--------------------------"
-	#print "Node:          ", name
-	#print "Count:         ", _count
-	#print "Useful payload:", _upayload
-	#print "Total payload: ", _tpayload
-	#print "Total time:    ", _total_time
-	#print "Avg. time:     ", float(_total_time) / _count
-	#print "--------------------------------------------------------------"
-	#print "\n"
-
 	print "SLEEPING..."
 	time.sleep(120)
-
-	print "STATISTICS"
-	print this_node.getStatistics()
+	this_node.killThreads()
+	this_node.logStatistics()
 	sys.exit(0)
