@@ -598,16 +598,18 @@ if __name__ == '__main__':
 	this_node = MulticastNode(name, slist, topology, period, logFile, dpoisson)
 	this_node.run()
 
-	_count, _upayload, _tpayload, _total_time = this_node.getStatistics()
+	#_count, _upayload, _tpayload, _total_time = this_node.getStatistics()
 
-	print "--------------------------STATISTICS--------------------------"
-	print "Node:          ", name
-	print "Count:         ", _count
-	print "Useful payload:", _upayload
-	print "Total payload: ", _tpayload
-	print "Total time:    ", _total_time
-	print "Avg. time:     ", float(_total_time) / _count
-	print "--------------------------------------------------------------"
-	print "\n"
+	#print "--------------------------STATISTICS--------------------------"
+	#print "Node:          ", name
+	#print "Count:         ", _count
+	#print "Useful payload:", _upayload
+	#print "Total payload: ", _tpayload
+	#print "Total time:    ", _total_time
+	#print "Avg. time:     ", float(_total_time) / _count
+	#print "--------------------------------------------------------------"
+	#print "\n"
 
-	sys.exit(0)
+	#sys.exit(0)
+
+	return this_node.getStatistics()
