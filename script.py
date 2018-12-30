@@ -60,13 +60,16 @@ if __name__ == '__main__':
 	net = Mininet(topo, host=CPULimitedHost, link=TCLink)
 	net.start()
 
+	'''
 	for i in xrange(5):
 		node = 'h%d' % (i + 1)
 		pid = os.fork()
 		if pid == 0:
 			start_time = time.time()
 			h_i = net.get(node)
-			h_i.cmd('sudo python Node.py ' + node + ' ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict[node])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_' + node + '.txt')
+			result = h_i.cmd('sudo python Node.py ' + node + ' ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict[node])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_' + node + '.txt')
+			
+			print result
 			#while time.time() - start_time < 120:
 			#	time.sleep(1)
 		else:
@@ -74,17 +77,25 @@ if __name__ == '__main__':
 
 	time.sleep(125)
 	sys.exit(0)
+	'''
+	
+	h1 = net.get('h1')
+	h2 = net.get('h2')
+	h3 = net.get('h3')
+	h4 = net.get('h4')
+	h5 = net.get('h5')
 
-	#h1 = net.get('h1')
-	#h2 = net.get('h2')
-	#h3 = net.get('h3')
-	#h4 = net.get('h4')
-	#h5 = net.get('h5')
+#	print h1.cmd('ifconfig -a') 
+#	print h2.cmd('ifconfig -a')
+#	print h3.cmd('ifconfig -a')
+#	print h4.cmd('ifconfig -a')
+#	print h5.cmd('ifconfig -a')
 
-	#result = h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt')
-	#print result
-	#h2.cmd('sudo python Node.py h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h2.txt')
-	#h3.cmd('sudo python Node.py h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h3.txt')
-	#h4.cmd('sudo python Node.py h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h4.txt')
-	#h5.cmd('sudo python Node.py h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h5.txt')
-
+	h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt >> output1.txt &')
+	h2.cmd('sudo python Node.py h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h2.txt >> output2.txt &')
+	h3.cmd('sudo python Node.py h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h3.txt >> output3.txt &')
+	h4.cmd('sudo python Node.py h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h4.txt >> output4.txt &')
+	h5.cmd('sudo python Node.py h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h5.txt >> output5.txt &')
+	
+	time.sleep(330)
+	sys.exit(0)

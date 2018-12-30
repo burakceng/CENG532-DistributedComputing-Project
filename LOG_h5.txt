@@ -1,0 +1,2526 @@
+h5 - Starting with [5, 8, 12, 18, 20, 31, 41, 45, 46, 49]...
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST Received 2 USEFUL - Stamp: 1546196549.61, Diff: 0.553822994232
+h5 - M_CAST ACK 2 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196550.79, Diff: 0.522099018097
+h5 - Delivering 2, Received at: 1546196549.61...
+h5 - Deliver 2 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST Received 6 USEFUL - Stamp: 1546196549.71, Diff: 1.57968401909
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196551.29, Diff: 1.03260922432
+h5 - MCAST 8 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196551.73, Diff: 0.0220229625702
+h5 - MCAST 8 to node h4.
+h5 - M_CAST Received 7 USEFUL - Stamp: 1546196551.71, Diff: 0.521789073944
+h5 - M_CAST ACK 7 Sent to h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - MCAST 12 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 12 to node h4.
+h5 - M_CAST Received 27 USEFUL - Stamp: 1546196553.69, Diff: 0.522924900055
+h5 - M_CAST ACK 27 Sent to h4
+h5 - M_CAST Received 11 USEFUL - Stamp: 1546196553.72, Diff: 0.525350093842
+h5 - M_CAST ACK 11 Sent to h3
+h5 - M_CAST ACK 2 Sent to h4
+h5 - M_CAST ACK 6 Sent to h3
+h5 - MCAST 18 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196555.79, Diff: 0.0216729640961
+h5 - MCAST 18 to node h4.
+h5 - M_CAST Received 29 USEFUL - Stamp: 1546196555.7, Diff: 0.52323102951
+h5 - M_CAST ACK 29 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST Received 13 USEFUL - Stamp: 1546196555.72, Diff: 0.522729873657
+h5 - M_CAST ACK 13 Sent to h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196556.31, Diff: 0.0428040027618
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196556.87, Diff: 0.535360813141
+h5 - Delivering 6, Received at: 1546196549.71...
+h5 - Deliver 6 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 20 to node h3.
+h5 - MCAST 20 to node h4.
+h5 - M_CAST Received 32 USEFUL - Stamp: 1546196557.7, Diff: 0.524093151093
+h5 - M_CAST ACK 32 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST Received 15 USEFUL - Stamp: 1546196557.72, Diff: 0.524964094162
+h5 - M_CAST ACK 15 Sent to h3
+h5 - M_CAST ACK 2 Sent to h4
+h5 - M_CAST ACK Received 5 - Stamp: 1546196558.29, Diff: 0.0214629173279
+h5 - MCAST 5 to node h3.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196558.35, Diff: 0.526551008224
+h5 - Delivering 7, Received at: 1546196551.71...
+h5 - Deliver 7 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196559.3, Diff: 1.51000213623
+h5 - Delivering 27, Received at: 1546196553.69...
+h5 - Deliver 27 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 6 Sent to h3
+h5 - MCAST 31 to node h3.
+h5 - MCAST 31 to node h4.
+h5 - M_CAST Received 33 USEFUL - Stamp: 1546196559.7, Diff: 0.596090078354
+h5 - M_CAST ACK 33 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196560.32, Diff: 0.524883031845
+h5 - Delivering 11, Received at: 1546196553.72...
+h5 - Deliver 11 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 2 Sent to h4
+h5 - MCAST 41 to node h3.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196561.88, Diff: 0.531892061234
+h5 - Delivering 29, Received at: 1546196555.7...
+h5 - Deliver 29 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 41 to node h4.
+h5 - M_CAST Received 36 USEFUL - Stamp: 1546196561.73, Diff: 1.16926193237
+h5 - M_CAST ACK 36 Sent to h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196563.46, Diff: 0.0238218307495
+h5 - MCAST 5 to node h3.
+h5 - MCAST 45 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - MCAST 45 to node h4.
+h5 - M_CAST Received 47 USEFUL - Stamp: 1546196563.74, Diff: 0.522874116898
+h5 - M_CAST ACK 47 Sent to h4
+h5 - M_CAST Received 40 USEFUL - Stamp: 1546196563.74, Diff: 0.72741317749
+h5 - M_CAST ACK 40 Sent to h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 2 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196565.05, Diff: 0.524741888046
+h5 - Delivering 13, Received at: 1546196555.72...
+h5 - Deliver 13 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 46 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196565.84, Diff: 0.0348601341248
+h5 - MCAST 5 to node h3.
+h5 - M_CAST ACK Received 5 - Stamp: 1546196566.05, Diff: 1.0088160038
+h5 - MCAST 5 to node h3.
+h5 - MCAST 46 to node h4.
+h5 - MCAST 5 to node h4.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST Received 43 USEFUL - Stamp: 1546196565.74, Diff: 1.10517716408
+h5 - M_CAST ACK 43 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196567.06, Diff: 2.01091098785
+h5 - Delivering 32, Received at: 1546196557.7...
+h5 - Deliver 32 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 49 to node h3.
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST Received 48 USEFUL - Stamp: 1546196565.74, Diff: 2.31630706787
+h5 - M_CAST ACK 48 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 49 to node h4.
+h5 - M_CAST Received 50 USEFUL - Stamp: 1546196567.75, Diff: 0.522386074066
+h5 - M_CAST Received 44 USEFUL - Stamp: 1546196567.75, Diff: 0.522374153137
+h5 - M_CAST ACK 44 Sent to h3
+h5 - M_CAST ACK 50 Sent to h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196568.47, Diff: 0.529701948166
+h5 - Delivering 15, Received at: 1546196557.72...
+h5 - Deliver 15 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196568.96, Diff: 0.527139902115
+h5 - Delivering 33, Received at: 1546196559.7...
+h5 - Deliver 33 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196569.47, Diff: 0.526639938354
+h5 - MCAST 5 to node h3.
+h5 - M_CAST ACK Received 5 - Stamp: 1546196569.96, Diff: 0.525660037994
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196574.05, Diff: 0.522130966187
+h5 - Delivering 36, Received at: 1546196561.73...
+h5 - Deliver 36 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196575.13, Diff: 0.529699087143
+h5 - Delivering 40, Received at: 1546196563.74...
+h5 - Deliver 40 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196583.64, Diff: 0.523226976395
+h5 - Delivering 47, Received at: 1546196563.74...
+h5 - Deliver 47 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196584.22, Diff: 0.529383897781
+h5 - Delivering 43, Received at: 1546196565.74...
+h5 - Deliver 43 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196584.65, Diff: 0.523932933807
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 5 Sent to h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196590.79, Diff: 0.522009849548
+h5 - Delivering 48, Received at: 1546196565.74...
+h5 - Deliver 48 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196591.99, Diff: 0.525693893433
+h5 - Delivering 50, Received at: 1546196567.75...
+h5 - Deliver 50 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196593.75, Diff: 0.0213620662689
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196597.08, Diff: 0.522013902664
+h5 - Delivering 44, Received at: 1546196567.75...
+h5 - Deliver 44 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196599.38, Diff: 0.522405147552
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196602.67, Diff: 0.5216588974
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196607.72, Diff: 0.523320913315
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196608.73, Diff: 0.984235048294
+h5 - M_CAST ACK Received 5 - Stamp: 1546196609.73, Diff: 0.984018087387
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196611.99, Diff: 0.0211539268494
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196617.08, Diff: 0.0211341381073
+h5 - MCAST 5 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 5 - Stamp: 1546196617.58, Diff: 0.0208969116211
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196618.59, Diff: 1.28276109695
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196619.44, Diff: 0.522418022156
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196620.44, Diff: 1.33003592491
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196624.18, Diff: 0.522207021713
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196626.04, Diff: 0.523926973343
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196629.78, Diff: 0.525361061096
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196631.64, Diff: 0.522891998291
+h5 - M_CAST ACK Received 5 - Stamp: 1546196632.64, Diff: 0.521035909653
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196637.74, Diff: 0.026752948761
+h5 - MCAST 5 to node h3.
+h5 - M_CAST ACK 5 Sent to h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196639.29, Diff: 0.522155046463
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196643.88, Diff: 0.524894952774
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 5 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196644.89, Diff: 0.523118019104
+h5 - M_CAST ACK 2 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196645.48, Diff: 0.522350072861
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196645.89, Diff: 1.06966400146
+h5 - M_CAST ACK Received 5 - Stamp: 1546196646.89, Diff: 1.52474403381
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196650.53, Diff: 0.522331953049
+h5 - M_CAST ACK Received 5 - Stamp: 1546196650.57, Diff: 0.0210390090942
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK 5 Sent to h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196655.66, Diff: 0.021176815033
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196656.62, Diff: 0.538273096085
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196656.66, Diff: 1.02025413513
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 2 Sent to h4
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196661.72, Diff: 0.0211899280548
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196662.72, Diff: 0.990104913712
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196666.31, Diff: 0.522316217422
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 5 Sent to h4
+h5 - M_CAST ACK Received 5 - Stamp: 1546196667.31, Diff: 0.0211560726166
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK 2 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546196669.36, Diff: 0.521662950516
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196671.4, Diff: 0.522266864777
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546196672.4, Diff: 1.02027893066
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 2 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - Starting with [5, 6]...
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST Received 8 USEFUL - Stamp: 1546196920.3, Diff: 0.540328979492
+h5 - M_CAST ACK 8 Sent to h4
+h5 - M_CAST Received 1 USEFUL - Stamp: 1546196920.34, Diff: 1.01541209221
+h5 - M_CAST ACK 1 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196921.4, Diff: 0.0215640068054
+h5 - MCAST 6 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196922.41, Diff: 0.0238728523254
+h5 - MCAST 6 to node h4.
+h5 - M_CAST Received 10 USEFUL - Stamp: 1546196922.31, Diff: 0.525079965591
+h5 - M_CAST ACK 10 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546196926.55, Diff: 0.0233640670776
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 5 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196927.13, Diff: 0.541668891907
+h5 - Delivering 8, Received at: 1546196920.3...
+h5 - Deliver 8 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196927.16, Diff: 0.0232679843903
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196928.76, Diff: 0.522938013077
+h5 - Delivering 1, Received at: 1546196920.34...
+h5 - Deliver 1 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196932.77, Diff: 0.525820016861
+h5 - Delivering 10, Received at: 1546196922.31...
+h5 - Deliver 10 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 8 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546196937.83, Diff: 0.0353651046753
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196938.84, Diff: 1.03743219376
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196939.84, Diff: 1.96415996552
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196944.06, Diff: 0.523399829865
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - M_CAST ACK Received 5 - Stamp: 1546196944.89, Diff: 0.0219578742981
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK 5 Sent to h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196949.17, Diff: 0.53121304512
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196949.49, Diff: 0.525277853012
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196954.59, Diff: 0.522290945053
+h5 - M_CAST ACK Received 5 - Stamp: 1546196955.59, Diff: 1.0188062191
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196960.19, Diff: 0.522256851196
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196964.49, Diff: 0.530025959015
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196965.79, Diff: 0.522750854492
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196966.12, Diff: 0.540318965912
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196971.38, Diff: 0.526674032211
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196976.53, Diff: 0.543133974075
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196977.37, Diff: 0.527683019638
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196977.53, Diff: 1.07250285149
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196983.0, Diff: 0.532439947128
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196988.66, Diff: 0.534941911697
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196991.22, Diff: 0.530340909958
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546196994.28, Diff: 0.526041984558
+h5 - M_CAST ACK Received 5 - Stamp: 1546196995.28, Diff: 0.521903038025
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546196996.36, Diff: 0.537292957306
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546197000.41, Diff: 0.0399649143219
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197001.97, Diff: 0.530485868454
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 5 - Stamp: 1546197006.02, Diff: 0.0295698642731
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546197011.09, Diff: 0.0217730998993
+h5 - MCAST 5 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197011.64, Diff: 0.533756971359
+h5 - M_CAST ACK Received 5 - Stamp: 1546197013.16, Diff: 0.0297789573669
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197016.32, Diff: 0.537019968033
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546197018.32, Diff: 0.529735088348
+h5 - M_CAST ACK 5 Sent to h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546197020.03, Diff: 0.523420095444
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 5 - Stamp: 1546197021.43, Diff: 0.0213420391083
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546197025.16, Diff: 0.531939983368
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546197026.17, Diff: 1.05853700638
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK Received 5 - Stamp: 1546197026.54, Diff: 0.0416359901428
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK Received 5 - Stamp: 1546197027.18, Diff: 1.05022621155
+h5 - MCAST 5 to node h3.
+h5 - M_CAST ACK 1 Sent to h3
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197028.74, Diff: 0.531238079071
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 5 Sent to h4
+h5 - M_CAST ACK Received 5 - Stamp: 1546197033.18, Diff: 0.0296809673309
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546197035.24, Diff: 0.525116920471
+h5 - M_CAST ACK 5 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546197041.16, Diff: 0.714682817459
+h5 - M_CAST ACK Received 5 - Stamp: 1546197042.16, Diff: 0.493271112442
+h5 - MCAST 5 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - MCAST 5 to node h4.
+h5 - M_CAST ACK Received 5 - Stamp: 1546197043.22, Diff: 0.0256879329681
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - DELIVER Received 8 USEFUL - Stamp: 1546197043.74, Diff: 0.816602945328
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197044.26, Diff: 1.49626207352
+h5 - Starting with [4, 8]...
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST Received 6 USEFUL - Stamp: 1546197152.92, Diff: 0.546867132187
+h5 - M_CAST ACK 6 Sent to h4
+h5 - MCAST 8 to node h3.
+h5 - M_CAST Received 10 USEFUL - Stamp: 1546197154.83, Diff: 0.53889298439
+h5 - M_CAST ACK 10 Sent to h3
+h5 - M_CAST Received 2 USEFUL - Stamp: 1546197155.39, Diff: 0.029167175293
+h5 - M_CAST ACK 2 Sent to h3
+h5 - MCAST 8 to node h4.
+h5 - M_CAST Received 9 USEFUL - Stamp: 1546197154.92, Diff: 0.524066209793
+h5 - M_CAST ACK 9 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197155.55, Diff: 0.521806955338
+h5 - Delivering 6, Received at: 1546197152.92...
+h5 - Deliver 6 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 10 Sent to h3
+h5 - M_CAST ACK 2 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197160.65, Diff: 0.0301361083984
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197163.49, Diff: 0.53999209404
+h5 - Delivering 10, Received at: 1546197154.83...
+h5 - Deliver 10 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197165.26, Diff: 0.523392915726
+h5 - Delivering 9, Received at: 1546197154.92...
+h5 - Deliver 9 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 2 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197169.1, Diff: 0.535592794418
+h5 - Delivering 2, Received at: 1546197155.39...
+h5 - Deliver 2 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK 2 Sent to h3
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197174.14, Diff: 0.52236199379
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197178.32, Diff: 0.522616147995
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197179.24, Diff: 0.0212030410767
+h5 - MCAST 4 to node h3.
+h5 - M_CAST ACK Received 4 - Stamp: 1546197179.32, Diff: 0.521666049957
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197184.39, Diff: 0.0300509929657
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197185.43, Diff: 0.0216238498688
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197186.44, Diff: 0.964224100113
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197187.6, Diff: 0.522729158401
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197194.26, Diff: 0.529705047607
+h5 - M_CAST ACK 2 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197196.04, Diff: 0.521595954895
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197201.14, Diff: 0.0216510295868
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197203.38, Diff: 0.0225048065186
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197208.0, Diff: 0.522516012192
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197208.5, Diff: 0.0298299789429
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK 2 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197210.11, Diff: 0.532344102859
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197210.51, Diff: 0.536348104477
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197215.23, Diff: 0.0300278663635
+h5 - MCAST 4 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197218.16, Diff: 0.529098987579
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 2 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197221.18, Diff: 0.0323479175568
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK 4 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197229.24, Diff: 0.0299940109253
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197230.3, Diff: 0.0296421051025
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197234.86, Diff: 0.0236427783966
+h5 - MCAST 4 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197235.91, Diff: 0.525521039963
+h5 - M_CAST ACK Received 4 - Stamp: 1546197235.93, Diff: 0.029886007309
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197241.25, Diff: 0.0666658878326
+h5 - MCAST 4 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197242.26, Diff: 0.994314193726
+h5 - M_CAST ACK Received 4 - Stamp: 1546197242.33, Diff: 0.0243639945984
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197246.93, Diff: 0.527586221695
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 2 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 2 Sent to h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197252.38, Diff: 0.0268409252167
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK Received 4 - Stamp: 1546197253.21, Diff: 0.0216958522797
+h5 - MCAST 4 to node h3.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197253.38, Diff: 1.02037119865
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197257.83, Diff: 0.556339979172
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197259.49, Diff: 0.0527198314667
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK 2 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197261.11, Diff: 0.539477825165
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197266.11, Diff: 0.975452184677
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197266.22, Diff: 0.0255870819092
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197267.84, Diff: 0.670796871185
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 2 Sent to h3
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197270.83, Diff: 0.527127027512
+h5 - M_CAST ACK 4 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197275.85, Diff: 0.0243849754333
+h5 - MCAST 4 to node h3.
+h5 - DELIVER Received 2 USEFUL - Stamp: 1546197275.96, Diff: 0.532270908356
+h5 - MCAST 4 to node h4.
+h5 - Starting with [6, 7]...
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - M_CAST Received 5 USEFUL - Stamp: 1546197338.67, Diff: 0.577449083328
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197340.25, Diff: 0.523828983307
+h5 - Delivering 5, Received at: 1546197338.67...
+h5 - Deliver 5 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 7 to node h3.
+h5 - MCAST 7 to node h4.
+h5 - M_CAST Received 4 USEFUL - Stamp: 1546197340.63, Diff: 0.523692131042
+h5 - M_CAST ACK 4 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST Received 8 USEFUL - Stamp: 1546197340.68, Diff: 0.573334932327
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK Received 6 - Stamp: 1546197341.31, Diff: 0.0239689350128
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST Received 1 USEFUL - Stamp: 1546197345.21, Diff: 0.0292718410492
+h5 - M_CAST ACK 1 Sent to h4
+h5 - M_CAST ACK Received 6 - Stamp: 1546197345.27, Diff: 0.0268440246582
+h5 - MCAST 6 to node h3.
+h5 - M_CAST ACK 8 Sent to h3
+h5 - MCAST 6 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197346.27, Diff: 1.00596499443
+h5 - Delivering 4, Received at: 1546197340.63...
+h5 - Deliver 4 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197346.53, Diff: 0.549906015396
+h5 - Delivering 8, Received at: 1546197340.68...
+h5 - Deliver 8 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 1 Sent to h4
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197350.86, Diff: 0.533535003662
+h5 - Delivering 1, Received at: 1546197345.21...
+h5 - Deliver 1 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197350.94, Diff: 0.525367975235
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197352.01, Diff: 0.534338951111
+h5 - M_CAST ACK 1 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197361.77, Diff: 0.537266016006
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197366.87, Diff: 0.52668094635
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 6 - Stamp: 1546197367.88, Diff: 1.01881408691
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197372.0, Diff: 0.529632091522
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK Received 6 - Stamp: 1546197373.5, Diff: 0.0220201015472
+h5 - MCAST 6 to node h3.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197373.61, Diff: 0.526490926743
+h5 - MCAST 6 to node h4.
+h5 - M_CAST ACK 1 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197375.57, Diff: 0.531172990799
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK Received 6 - Stamp: 1546197379.16, Diff: 0.0243189334869
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 6 - Stamp: 1546197380.75, Diff: 0.0215809345245
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK 1 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197386.89, Diff: 0.522215843201
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197390.81, Diff: 0.523888111115
+h5 - M_CAST ACK 1 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197391.95, Diff: 0.522076129913
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 5 Sent to h3
+h5 - M_CAST ACK 1 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 1 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 6 - Stamp: 1546197407.41, Diff: 0.0209400653839
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197408.84, Diff: 0.530961036682
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197410.64, Diff: 0.521782875061
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197414.45, Diff: 0.529139041901
+h5 - M_CAST ACK Received 6 - Stamp: 1546197415.45, Diff: 0.528416156769
+h5 - MCAST 6 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 6 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197416.69, Diff: 0.522279977798
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197419.56, Diff: 0.533272027969
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197420.62, Diff: 0.535943984985
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK 1 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK 1 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197425.66, Diff: 0.530617952347
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 6 - Stamp: 1546197425.76, Diff: 0.0295670032501
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197431.89, Diff: 0.526821136475
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197434.82, Diff: 0.656922101974
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197434.82, Diff: 0.56713104248
+h5 - M_CAST ACK 6 Sent to h3
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197436.42, Diff: 0.522920846939
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 1 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197440.42, Diff: 0.522412061691
+h5 - M_CAST ACK 5 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197441.54, Diff: 0.530303955078
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197441.73, Diff: 0.530346155167
+h5 - M_CAST ACK 5 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197446.61, Diff: 0.529573202133
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197446.78, Diff: 0.523605823517
+h5 - M_CAST ACK Received 6 - Stamp: 1546197447.61, Diff: 0.997838020325
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 6 - Stamp: 1546197453.23, Diff: 0.0299758911133
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197456.02, Diff: 0.527318000793
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197456.57, Diff: 0.536875963211
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546197461.07, Diff: 0.521632909775
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 1 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197461.63, Diff: 0.535020112991
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 6 - Stamp: 1546197462.12, Diff: 0.0210359096527
+h5 - MCAST 6 to node h3.
+h5 - MCAST 6 to node h4.
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197462.63, Diff: 0.982532978058
+h5 - Starting with [4, 5]...
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST Received 3 USEFUL - Stamp: 1546197534.51, Diff: 0.538682937622
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST Received 9 USEFUL - Stamp: 1546197534.5, Diff: 0.550896883011
+h5 - M_CAST ACK 9 Sent to h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197535.07, Diff: 0.0218629837036
+h5 - M_CAST ACK Received 4 - Stamp: 1546197535.09, Diff: 0.0235528945923
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - MCAST 5 to node h3.
+h5 - MCAST 5 to node h4.
+h5 - M_CAST Received 10 USEFUL - Stamp: 1546197536.5, Diff: 0.532981872559
+h5 - M_CAST ACK 10 Sent to h4
+h5 - M_CAST Received 6 USEFUL - Stamp: 1546197536.51, Diff: 0.521811008453
+h5 - M_CAST ACK 6 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 9 Sent to h4
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546197537.27, Diff: 0.530753850937
+h5 - Delivering 9, Received at: 1546197534.5...
+h5 - Deliver 9 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197537.62, Diff: 0.523165225983
+h5 - Delivering 3, Received at: 1546197534.51...
+h5 - Deliver 3 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 4 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197542.74, Diff: 0.0214800834656
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197547.85, Diff: 0.0215299129486
+h5 - MCAST 4 to node h3.
+h5 - M_CAST ACK 4 Sent to h4
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK 9 Sent to h4
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197549.94, Diff: 0.53239107132
+h5 - Delivering 10, Received at: 1546197536.5...
+h5 - Deliver 10 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197554.93, Diff: 0.522746801376
+h5 - Delivering 6, Received at: 1546197536.51...
+h5 - Deliver 6 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 9 Sent to h4
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197556.5, Diff: 0.535483121872
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197568.11, Diff: 0.0225749015808
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197569.75, Diff: 0.0299680233002
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197574.86, Diff: 0.0215740203857
+h5 - MCAST 4 to node h3.
+h5 - M_CAST ACK 4 Sent to h4
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 4 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197579.95, Diff: 0.0230250358582
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK 3 Sent to h3
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546197581.51, Diff: 0.524764060974
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK 9 Sent to h4
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197586.1, Diff: 0.529820203781
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 9 Sent to h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197591.66, Diff: 0.0256779193878
+h5 - MCAST 4 to node h3.
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197591.66, Diff: 0.532407999039
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 9 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197596.81, Diff: 0.0248880386353
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197597.34, Diff: 0.530646800995
+h5 - M_CAST ACK 3 Sent to h3
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197598.72, Diff: 0.546341180801
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197604.16, Diff: 0.846644878387
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546197606.7, Diff: 0.530119895935
+h5 - M_CAST ACK Received 4 - Stamp: 1546197607.7, Diff: 0.525595903397
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197609.41, Diff: 0.0216910839081
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197614.59, Diff: 0.0288829803467
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197616.22, Diff: 0.0231530666351
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546197616.95, Diff: 1.17236495018
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK Received 4 - Stamp: 1546197622.23, Diff: 0.0344920158386
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197623.24, Diff: 0.980405092239
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 9 Sent to h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197628.38, Diff: 0.0366549491882
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546197634.07, Diff: 0.535802125931
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK Received 4 - Stamp: 1546197634.5, Diff: 0.044753074646
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546197635.24, Diff: 0.531332015991
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197638.16, Diff: 0.637030124664
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197643.29, Diff: 0.0236179828644
+h5 - MCAST 4 to node h3.
+h5 - MCAST 4 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197646.84, Diff: 0.571362018585
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 4 - Stamp: 1546197648.46, Diff: 0.0240430831909
+h5 - MCAST 4 to node h3.
+h5 - M_CAST ACK 4 Sent to h4
+h5 - M_CAST ACK 9 Sent to h4
+h5 - MCAST 4 to node h4.
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197649.46, Diff: 0.5269780159
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546197653.63, Diff: 0.522175073624
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197654.59, Diff: 0.538107156754
+h5 - M_CAST ACK 9 Sent to h4
+h5 - DELIVER Received 9 USEFUL - Stamp: 1546197656.17, Diff: 0.531671047211
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Starting with [3, 10]...
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - M_CAST Received 6 USEFUL - Stamp: 1546197757.27, Diff: 0.578094959259
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546197757.87, Diff: 0.0284430980682
+h5 - MCAST 10 to node h3.
+h5 - MCAST 10 to node h4.
+h5 - M_CAST Received 7 USEFUL - Stamp: 1546197758.28, Diff: 0.525351047516
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546197758.89, Diff: 0.0214629173279
+h5 - M_CAST Received 9 USEFUL - Stamp: 1546197760.4, Diff: 0.600504159927
+h5 - M_CAST ACK 9 Sent to h3
+h5 - M_CAST Received 1 USEFUL - Stamp: 1546197761.03, Diff: 0.0222029685974
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197761.59, Diff: 0.52202296257
+h5 - Delivering 6, Received at: 1546197757.27...
+h5 - Deliver 6 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546197762.94, Diff: 0.0223278999329
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197766.68, Diff: 0.522556066513
+h5 - Delivering 7, Received at: 1546197758.28...
+h5 - Deliver 7 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197767.12, Diff: 0.52796292305
+h5 - Delivering 9, Received at: 1546197760.4...
+h5 - Deliver 9 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197768.23, Diff: 0.524421215057
+h5 - Delivering 1, Received at: 1546197761.03...
+h5 - Deliver 1 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197771.77, Diff: 0.522444963455
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197773.2, Diff: 0.532071113586
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546197776.87, Diff: 0.0242030620575
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197778.95, Diff: 0.525266885757
+h5 - M_CAST ACK Received 3 - Stamp: 1546197780.07, Diff: 0.574872016907
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197780.97, Diff: 0.528426885605
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197781.08, Diff: 2.15917992592
+h5 - M_CAST ACK Received 3 - Stamp: 1546197781.98, Diff: 0.377342939377
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - M_CAST ACK Received 3 - Stamp: 1546197787.08, Diff: 0.0229909420013
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197788.09, Diff: 1.01423811913
+h5 - M_CAST ACK 3 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197793.72, Diff: 0.535886049271
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546197797.29, Diff: 0.0353400707245
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546197798.83, Diff: 0.0224530696869
+h5 - MCAST 3 to node h3.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197798.84, Diff: 0.522176980972
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197803.91, Diff: 0.534337043762
+h5 - M_CAST ACK Received 3 - Stamp: 1546197804.91, Diff: 0.971645116806
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 3 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197810.58, Diff: 0.525203943253
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197810.68, Diff: 0.533247947693
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197811.68, Diff: 1.12722206116
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197816.3, Diff: 0.523473978043
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546197819.77, Diff: 0.0280959606171
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546197821.43, Diff: 0.0286200046539
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - M_CAST ACK 3 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197827.59, Diff: 0.533983945847
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546197830.66, Diff: 0.0231039524078
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 3 Sent to h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546197836.28, Diff: 0.0299139022827
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197837.85, Diff: 0.539389133453
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK Received 3 - Stamp: 1546197839.77, Diff: 0.0226230621338
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 3 - Stamp: 1546197844.9, Diff: 0.0282289981842
+h5 - MCAST 3 to node h3.
+h5 - M_CAST ACK 3 Sent to h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197845.94, Diff: 0.53099489212
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK Received 3 - Stamp: 1546197849.98, Diff: 0.0329449176788
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 1 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197851.54, Diff: 0.523632049561
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197856.08, Diff: 0.524609088898
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197857.09, Diff: 1.03782391548
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 1 Sent to h3
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197861.27, Diff: 0.534252882004
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 1 Sent to h3
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197866.36, Diff: 0.523424863815
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197867.45, Diff: 0.522503137589
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197867.87, Diff: 0.530476093292
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197874.02, Diff: 0.659719944
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546197877.08, Diff: 0.523035049438
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 6 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 6 USEFUL - Stamp: 1546197879.61, Diff: 0.52180814743
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 1 Sent to h3
+h5 - Starting with [3, 7, 9, 12, 17]...
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - M_CAST Received 5 USEFUL - Stamp: 1546198432.11, Diff: 1.54254388809
+h5 - M_CAST ACK 5 Sent to h1
+h5 - M_CAST Received 10 USEFUL - Stamp: 1546198432.05, Diff: 1.60775899887
+h5 - M_CAST ACK 10 Sent to h4
+h5 - M_CAST Received 4 USEFUL - Stamp: 1546198432.18, Diff: 1.5356938839
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK Received 3 - Stamp: 1546198433.71, Diff: 0.0285670757294
+h5 - M_CAST Received 1 USEFUL - Stamp: 1546198432.19, Diff: 1.5346570015
+h5 - M_CAST ACK 1 Sent to h2
+h5 - MCAST 7 to node h2.
+h5 - MCAST 7 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198435.73, Diff: 0.0246539115906
+h5 - MCAST 7 to node h1.
+h5 - MCAST 7 to node h4.
+h5 - M_CAST Received 13 USEFUL - Stamp: 1546198435.13, Diff: 1.52481198311
+h5 - M_CAST ACK 13 Sent to h4
+h5 - M_CAST ACK 10 Sent to h4
+h5 - M_CAST Received 6 USEFUL - Stamp: 1546198435.19, Diff: 1.52957487106
+h5 - M_CAST ACK 6 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198436.74, Diff: 1.52922201157
+h5 - Delivering 10, Received at: 1546198432.05...
+h5 - Deliver 10 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 9 to node h2.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198438.22, Diff: 0.0218880176544
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198438.28, Diff: 1.5312898159
+h5 - Delivering 5, Received at: 1546198432.11...
+h5 - Deliver 5 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 9 to node h3.
+h5 - MCAST 9 to node h1.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198439.34, Diff: 0.0246379375458
+h5 - MCAST 9 to node h4.
+h5 - M_CAST Received 19 USEFUL - Stamp: 1546198438.13, Diff: 1.52988910675
+h5 - M_CAST ACK 19 Sent to h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 5 Sent to h1
+h5 - M_CAST Received 15 USEFUL - Stamp: 1546198438.21, Diff: 1.52513504028
+h5 - M_CAST ACK 15 Sent to h2
+h5 - M_CAST ACK Received 3 - Stamp: 1546198439.74, Diff: 0.0232758522034
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198439.75, Diff: 1.52438616753
+h5 - Delivering 4, Received at: 1546198432.18...
+h5 - Deliver 4 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198440.34, Diff: 1.53674578667
+h5 - Delivering 1, Received at: 1546198432.19...
+h5 - Deliver 1 OK - Source: h2.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198440.79, Diff: 1.54609584808
+h5 - Delivering 13, Received at: 1546198435.13...
+h5 - Deliver 13 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 12 to node h2.
+h5 - MCAST 12 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198441.74, Diff: 0.027428150177
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198441.8, Diff: 2.05457615852
+h5 - Delivering 6, Received at: 1546198435.19...
+h5 - Deliver 6 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198441.89, Diff: 0.0218589305878
+h5 - MCAST 12 to node h1.
+h5 - MCAST 12 to node h4.
+h5 - M_CAST Received 16 USEFUL - Stamp: 1546198441.14, Diff: 1.52753210068
+h5 - M_CAST ACK 16 Sent to h4
+h5 - M_CAST Received 20 USEFUL - Stamp: 1546198441.21, Diff: 1.52906894684
+h5 - M_CAST ACK 20 Sent to h3
+h5 - M_CAST Received 18 USEFUL - Stamp: 1546198441.21, Diff: 1.53003978729
+h5 - M_CAST ACK 18 Sent to h2
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST Received 23 USEFUL - Stamp: 1546198441.14, Diff: 1.66012406349
+h5 - M_CAST ACK 23 Sent to h1
+h5 - M_CAST ACK 1 Sent to h2
+h5 - M_CAST ACK 4 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198442.84, Diff: 1.52680110931
+h5 - Delivering 19, Received at: 1546198438.13...
+h5 - Deliver 19 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198442.86, Diff: 0.0333919525146
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198443.45, Diff: 1.55960297585
+h5 - Delivering 15, Received at: 1546198438.21...
+h5 - Deliver 15 OK - Source: h2.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198443.85, Diff: 1.53747987747
+h5 - Delivering 16, Received at: 1546198441.14...
+h5 - Deliver 16 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 3 to node h1.
+h5 - MCAST 17 to node h2.
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198444.35, Diff: 1.52874898911
+h5 - Delivering 23, Received at: 1546198441.14...
+h5 - Deliver 23 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198444.46, Diff: 2.13463711739
+h5 - Delivering 20, Received at: 1546198441.21...
+h5 - Deliver 20 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 17 to node h3.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198444.85, Diff: 2.03222203255
+h5 - Delivering 18, Received at: 1546198441.21...
+h5 - Deliver 18 OK - Source: h2.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 5 Sent to h1
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198444.87, Diff: 3.48283600807
+h5 - MCAST 17 to node h1.
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198445.36, Diff: 1.52603292465
+h5 - MCAST 17 to node h4.
+h5 - M_CAST Received 22 USEFUL - Stamp: 1546198444.14, Diff: 1.5281689167
+h5 - M_CAST ACK 22 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 10 Sent to h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546198445.74, Diff: 0.0209341049194
+h5 - MCAST 3 to node h2.
+h5 - M_CAST Received 21 USEFUL - Stamp: 1546198444.22, Diff: 1.63699007034
+h5 - M_CAST ACK 21 Sent to h2
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198445.87, Diff: 3.52307510376
+h5 - Delivering 22, Received at: 1546198444.14...
+h5 - Deliver 22 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST ACK 1 Sent to h2
+h5 - MCAST 3 to node h3.
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198446.36, Diff: 2.33951210976
+h5 - Delivering 21, Received at: 1546198444.22...
+h5 - Deliver 21 OK - Source: h2.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 3 to node h1.
+h5 - M_CAST Received 25 USEFUL - Stamp: 1546198444.14, Diff: 2.73056697845
+h5 - M_CAST ACK 25 Sent to h1
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198446.88, Diff: 2.50897216797
+h5 - Delivering 25, Received at: 1546198444.14...
+h5 - Deliver 25 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198446.91, Diff: 1.52760004997
+h5 - MCAST 3 to node h4.
+h5 - M_CAST Received 24 USEFUL - Stamp: 1546198444.22, Diff: 3.14958906174
+h5 - M_CAST ACK 24 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198447.37, Diff: 1.97210812569
+h5 - Delivering 24, Received at: 1546198444.22...
+h5 - Deliver 24 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198447.74, Diff: 2.32911705971
+h5 - M_CAST ACK 4 Sent to h3
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198448.79, Diff: 3.04778599739
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198449.94, Diff: 1.52993798256
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198450.99, Diff: 1.55263900757
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 5 Sent to h1
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198453.51, Diff: 1.53219604492
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198453.56, Diff: 1.53387784958
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546198453.83, Diff: 0.0213830471039
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - MCAST 3 to node h4.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198455.43, Diff: 0.0246689319611
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198459.78, Diff: 1.61083006859
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 3 Sent to h2
+h5 - M_CAST ACK Received 3 - Stamp: 1546198460.52, Diff: 0.0209171772003
+h5 - MCAST 3 to node h2.
+h5 - M_CAST ACK 3 Sent to h3
+h5 - MCAST 3 to node h3.
+h5 - M_CAST ACK 4 Sent to h3
+h5 - MCAST 3 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 3 Sent to h4
+h5 - MCAST 3 to node h4.
+h5 - M_CAST ACK Received 3 - Stamp: 1546198462.06, Diff: 0.0218288898468
+h5 - MCAST 3 to node h2.
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198462.55, Diff: 1.87956094742
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198463.55, Diff: 1.92057108879
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198463.58, Diff: 1.52673411369
+h5 - M_CAST ACK 10 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198464.61, Diff: 1.5294649601
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198465.18, Diff: 1.53130412102
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198466.12, Diff: 1.52546000481
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198467.88, Diff: 1.53353095055
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK 5 Sent to h1
+h5 - M_CAST ACK 4 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198469.71, Diff: 1.52601194382
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198470.2, Diff: 1.53680610657
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198471.22, Diff: 1.53076100349
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198473.26, Diff: 1.52635097504
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 5 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198475.29, Diff: 0.0213401317596
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198476.31, Diff: 1.52546310425
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198476.32, Diff: 1.52491402626
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198478.36, Diff: 1.52526783943
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK 10 Sent to h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546198481.86, Diff: 0.0219540596008
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198483.4, Diff: 1.52985191345
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198483.46, Diff: 0.0208759307861
+h5 - MCAST 3 to node h2.
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198483.47, Diff: 1.52508401871
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198484.97, Diff: 1.53695487976
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198485.46, Diff: 3.01939988136
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198489.14, Diff: 1.59749293327
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK 5 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 10 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - M_CAST ACK Received 3 - Stamp: 1546198490.51, Diff: 0.0211520195007
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198491.1, Diff: 1.53230404854
+h5 - MCAST 3 to node h1.
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198491.57, Diff: 1.52798581123
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198492.1, Diff: 1.79765486717
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198492.63, Diff: 1.53666782379
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK Received 3 - Stamp: 1546198496.12, Diff: 0.02214884758
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - MCAST 3 to node h1.
+h5 - M_CAST ACK 5 Sent to h1
+h5 - M_CAST ACK Received 3 - Stamp: 1546198497.16, Diff: 0.0212178230286
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - M_CAST ACK Received 3 - Stamp: 1546198498.67, Diff: 0.023234128952
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198499.22, Diff: 1.52697992325
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198499.67, Diff: 1.52753710747
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198500.23, Diff: 2.04921102524
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198500.68, Diff: 2.39209604263
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198505.29, Diff: 1.54849481583
+h5 - M_CAST ACK 5 Sent to h1
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198507.33, Diff: 1.52368712425
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198507.84, Diff: 1.52391195297
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 3 - Stamp: 1546198508.27, Diff: 0.0210340023041
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 3 Sent to h4
+h5 - M_CAST ACK Received 3 - Stamp: 1546198509.32, Diff: 0.0212459564209
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h4.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - M_CAST ACK 10 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198511.34, Diff: 1.52436900139
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198512.92, Diff: 1.52426505089
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198513.38, Diff: 1.52841997147
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK Received 3 - Stamp: 1546198515.45, Diff: 0.0260469913483
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198517.46, Diff: 1.54171395302
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198518.47, Diff: 0.0216460227966
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198520.48, Diff: 3.53488087654
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198520.5, Diff: 1.52542304993
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198521.48, Diff: 2.99172401428
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198523.5, Diff: 1.52845215797
+h5 - M_CAST ACK 3 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 3 Sent to h3
+h5 - M_CAST ACK 4 Sent to h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198525.13, Diff: 1.52488708496
+h5 - M_CAST ACK 10 Sent to h4
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198525.61, Diff: 1.52427697182
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198526.07, Diff: 1.53441596031
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 5 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198531.19, Diff: 1.52723193169
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198532.18, Diff: 1.52599406242
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198532.19, Diff: 2.07232189178
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198533.18, Diff: 1.53097486496
+h5 - M_CAST ACK 1 Sent to h2
+h5 - M_CAST ACK 4 Sent to h3
+h5 - M_CAST ACK 10 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198535.73, Diff: 1.52422904968
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 5 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198538.76, Diff: 0.0272979736328
+h5 - MCAST 3 to node h2.
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198538.79, Diff: 1.52479505539
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198540.77, Diff: 3.50975084305
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198543.4, Diff: 1.52406692505
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198543.91, Diff: 1.52669405937
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198544.39, Diff: 1.5271730423
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198544.39, Diff: 1.52669882774
+h5 - M_CAST ACK 5 Sent to h1
+h5 - M_CAST ACK 4 Sent to h3
+h5 - DELIVER Received 5 USEFUL - Stamp: 1546198546.95, Diff: 1.53927087784
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198547.41, Diff: 1.535353899
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 10 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 10 USEFUL - Stamp: 1546198550.08, Diff: 1.55592012405
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198550.52, Diff: 1.52867293358
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198552.13, Diff: 1.54157090187
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198552.52, Diff: 0.0207760334015
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - MCAST 3 to node h1.
+h5 - MCAST 3 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 3 - Stamp: 1546198556.07, Diff: 0.0299410820007
+h5 - MCAST 3 to node h2.
+h5 - MCAST 3 to node h3.
+h5 - DELIVER Received 4 USEFUL - Stamp: 1546198556.71, Diff: 1.53042006493
+h5 - Starting with [8, 9, 13, 23, 24]...
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198683.24, Diff: 0.102337837219
+h5 - MCAST 8 to node h4.
+h5 - M_CAST Received 12 USEFUL - Stamp: 1546198682.02, Diff: 1.57811284065
+h5 - M_CAST ACK 12 Sent to h3
+h5 - M_CAST Received 3 USEFUL - Stamp: 1546198682.08, Diff: 1.53305697441
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST Received 7 USEFUL - Stamp: 1546198681.97, Diff: 2.5398349762
+h5 - M_CAST ACK 7 Sent to h4
+h5 - M_CAST ACK Received 8 - Stamp: 1546198684.57, Diff: 0.0287339687347
+h5 - MCAST 9 to node h2.
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 9 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198685.61, Diff: 0.0224390029907
+h5 - MCAST 9 to node h1.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198686.12, Diff: 0.0365428924561
+h5 - MCAST 9 to node h4.
+h5 - M_CAST Received 11 USEFUL - Stamp: 1546198685.0, Diff: 1.52515888214
+h5 - M_CAST ACK 11 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 7 Sent to h4
+h5 - M_CAST ACK Received 8 - Stamp: 1546198686.61, Diff: 0.0234951972961
+h5 - M_CAST Received 17 USEFUL - Stamp: 1546198685.08, Diff: 1.53203296661
+h5 - M_CAST ACK 17 Sent to h3
+h5 - M_CAST Received 2 USEFUL - Stamp: 1546198685.08, Diff: 1.53830695152
+h5 - M_CAST ACK 2 Sent to h2
+h5 - M_CAST Received 10 USEFUL - Stamp: 1546198685.09, Diff: 1.53237390518
+h5 - M_CAST ACK 10 Sent to h1
+h5 - M_CAST ACK 12 Sent to h3
+h5 - M_CAST Received 1 USEFUL - Stamp: 1546198686.64, Diff: 0.0217220783234
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198687.65, Diff: 1.52490592003
+h5 - Delivering 7, Received at: 1546198681.97...
+h5 - Deliver 7 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198687.74, Diff: 1.53051710129
+h5 - Delivering 12, Received at: 1546198682.02...
+h5 - Deliver 12 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 13 to node h2.
+h5 - MCAST 13 to node h3.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198688.65, Diff: 2.04952597618
+h5 - Delivering 3, Received at: 1546198682.08...
+h5 - Deliver 3 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198688.78, Diff: 0.0247449874878
+h5 - MCAST 13 to node h1.
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 13 to node h4.
+h5 - M_CAST Received 19 USEFUL - Stamp: 1546198688.09, Diff: 1.52566313744
+h5 - M_CAST ACK 19 Sent to h3
+h5 - M_CAST Received 14 USEFUL - Stamp: 1546198688.11, Diff: 1.52514100075
+h5 - M_CAST ACK 14 Sent to h1
+h5 - M_CAST Received 16 USEFUL - Stamp: 1546198688.01, Diff: 1.6497130394
+h5 - M_CAST ACK 16 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 12 Sent to h3
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK 7 Sent to h4
+h5 - M_CAST ACK Received 8 - Stamp: 1546198689.71, Diff: 0.0264840126038
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198689.72, Diff: 1.5317800045
+h5 - Delivering 11, Received at: 1546198685.0...
+h5 - Deliver 11 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198689.74, Diff: 1.52495598793
+h5 - Delivering 2, Received at: 1546198685.08...
+h5 - Deliver 2 OK - Source: h2.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198690.74, Diff: 2.52732300758
+h5 - Delivering 17, Received at: 1546198685.08...
+h5 - Deliver 17 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 23 to node h2.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198691.23, Diff: 1.5308008194
+h5 - Delivering 10, Received at: 1546198685.09...
+h5 - Deliver 10 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198691.26, Diff: 1.52574181557
+h5 - Delivering 1, Received at: 1546198686.64...
+h5 - Deliver 1 OK - Source: h2.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 23 to node h3.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198691.74, Diff: 3.03808403015
+h5 - Delivering 16, Received at: 1546198688.01...
+h5 - Deliver 16 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 23 to node h1.
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198692.26, Diff: 1.52769589424
+h5 - Delivering 19, Received at: 1546198688.09...
+h5 - Deliver 19 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 23 to node h4.
+h5 - M_CAST Received 18 USEFUL - Stamp: 1546198691.02, Diff: 1.60277986526
+h5 - M_CAST ACK 18 Sent to h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - M_CAST Received 15 USEFUL - Stamp: 1546198691.11, Diff: 1.63100194931
+h5 - M_CAST ACK 15 Sent to h1
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198693.26, Diff: 1.52836298943
+h5 - Delivering 14, Received at: 1546198688.11...
+h5 - Deliver 14 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198693.86, Diff: 1.53403496742
+h5 - Delivering 18, Received at: 1546198691.02...
+h5 - Deliver 18 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 24 to node h2.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198694.21, Diff: 0.0224661827087
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198694.28, Diff: 1.56280899048
+h5 - Delivering 15, Received at: 1546198691.11...
+h5 - Deliver 15 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 24 to node h3.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198694.71, Diff: 0.0233659744263
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 24 to node h1.
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 8 to node h3.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198695.21, Diff: 0.0269179344177
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 24 to node h4.
+h5 - M_CAST Received 21 USEFUL - Stamp: 1546198694.1, Diff: 1.5456738472
+h5 - M_CAST ACK 21 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198695.73, Diff: 0.0300099849701
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198696.22, Diff: 2.7051680088
+h5 - Delivering 21, Received at: 1546198694.1...
+h5 - Deliver 21 OK - Source: h4.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h3.
+h5 - M_CAST Received 25 USEFUL - Stamp: 1546198694.13, Diff: 2.5876891613
+h5 - M_CAST ACK 25 Sent to h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198696.71, Diff: 2.09394097328
+h5 - Delivering 25, Received at: 1546198694.13...
+h5 - Deliver 25 OK - Source: h3.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h1.
+h5 - M_CAST Received 6 USEFUL - Stamp: 1546198694.12, Diff: 3.10238099098
+h5 - M_CAST ACK 6 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198697.23, Diff: 1.62067103386
+h5 - Delivering 6, Received at: 1546198694.12...
+h5 - Deliver 6 OK - Source: h2.
+h5 - DELIVERY LOGGING...
+h5 - M_CAST Received 22 USEFUL - Stamp: 1546198694.18, Diff: 3.05423092842
+h5 - M_CAST ACK 22 Sent to h1
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198697.24, Diff: 1.60377907753
+h5 - Delivering 22, Received at: 1546198694.18...
+h5 - Deliver 22 OK - Source: h1.
+h5 - DELIVERY LOGGING...
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198697.75, Diff: 2.89966416359
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198698.89, Diff: 1.53458499908
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198699.41, Diff: 1.52722406387
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198699.89, Diff: 1.57271814346
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198703.86, Diff: 1.5340089798
+h5 - M_CAST ACK 3 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198704.86, Diff: 0.527452945709
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198704.94, Diff: 1.52492022514
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198705.94, Diff: 1.56271219254
+h5 - MCAST 8 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198710.48, Diff: 1.52606987953
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK 7 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198711.48, Diff: 1.99062108994
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198712.03, Diff: 1.53068304062
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198713.15, Diff: 1.52965402603
+h5 - M_CAST ACK 3 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198717.12, Diff: 1.52864289284
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198717.12, Diff: 1.5296318531
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198718.12, Diff: 1.55592989922
+h5 - M_CAST ACK Received 8 - Stamp: 1546198718.12, Diff: 1.00498580933
+h5 - MCAST 8 to node h2.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198719.78, Diff: 1.53874087334
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198720.13, Diff: 2.49192094803
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198724.78, Diff: 1.52338004112
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198725.16, Diff: 1.52986097336
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198725.26, Diff: 1.52679514885
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198725.76, Diff: 1.52380609512
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198727.18, Diff: 1.52458882332
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198728.24, Diff: 1.52728199959
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198731.82, Diff: 1.57443499565
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198732.28, Diff: 0.0256140232086
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - MCAST 8 to node h1.
+h5 - M_CAST ACK 3 Sent to h1
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198733.41, Diff: 1.52670097351
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198734.3, Diff: 2.98527789116
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198734.41, Diff: 2.09676408768
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198734.92, Diff: 0.0252559185028
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198735.41, Diff: 3.0580599308
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198735.87, Diff: 1.55364394188
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198736.93, Diff: 1.53800988197
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK Received 8 - Stamp: 1546198741.46, Diff: 0.0211329460144
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198741.52, Diff: 1.52452707291
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - MCAST 8 to node h3.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198741.98, Diff: 0.0212099552155
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198743.37, Diff: 0.0304689407349
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198743.47, Diff: 2.02530407906
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198746.62, Diff: 1.52296090126
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198747.64, Diff: 1.52534508705
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK Received 8 - Stamp: 1546198748.53, Diff: 0.0217871665955
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198748.59, Diff: 1.52417492867
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198749.16, Diff: 1.52423787117
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198749.19, Diff: 1.52623391151
+h5 - MCAST 8 to node h1.
+h5 - M_CAST ACK 8 Sent to h3
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198750.19, Diff: 1.64304280281
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198750.53, Diff: 1.99164700508
+h5 - M_CAST ACK 7 Sent to h4
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198752.74, Diff: 1.52429389954
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198754.13, Diff: 0.0301229953766
+h5 - MCAST 8 to node h2.
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198754.26, Diff: 1.52408194542
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - M_CAST ACK 8 Sent to h1
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198756.15, Diff: 3.43075990677
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198757.15, Diff: 2.37740397453
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198760.35, Diff: 1.52429485321
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198761.36, Diff: 2.01412010193
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198762.31, Diff: 0.0264871120453
+h5 - MCAST 8 to node h2.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198762.36, Diff: 1.01639986038
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198764.38, Diff: 3.5011548996
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198765.9, Diff: 1.52998995781
+h5 - M_CAST ACK Received 8 - Stamp: 1546198765.91, Diff: 0.0268421173096
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198767.93, Diff: 2.98864293098
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198768.43, Diff: 0.0302929878235
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198768.51, Diff: 1.53079104424
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198771.5, Diff: 1.52893304825
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198772.6, Diff: 1.52585697174
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198773.6, Diff: 1.52533984184
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198775.62, Diff: 1.53941583633
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198778.7, Diff: 0.0213048458099
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198779.11, Diff: 1.52420496941
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198780.12, Diff: 2.42767882347
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198780.72, Diff: 3.0539829731
+h5 - M_CAST ACK Received 8 - Stamp: 1546198781.12, Diff: 1.52291893959
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198783.12, Diff: 4.93403792381
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198783.14, Diff: 1.52578902245
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198784.13, Diff: 3.43479204178
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK Received 8 - Stamp: 1546198785.78, Diff: 0.0268728733063
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198787.79, Diff: 1.9866130352
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198788.27, Diff: 1.52915787697
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198788.4, Diff: 0.0304641723633
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198789.83, Diff: 1.53125715256
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198790.41, Diff: 3.19385099411
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198791.28, Diff: 1.52762818336
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198791.42, Diff: 3.70572710037
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198792.46, Diff: 1.52965307236
+h5 - M_CAST ACK 8 Sent to h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198793.84, Diff: 1.52705693245
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198794.95, Diff: 1.53886604309
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198795.12, Diff: 1.53430318832
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198796.99, Diff: 1.53697299957
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198798.95, Diff: 0.0276749134064
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198799.09, Diff: 1.54157090187
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198803.06, Diff: 1.52631592751
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198803.08, Diff: 1.52384400368
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198803.45, Diff: 1.52434587479
+h5 - M_CAST ACK 8 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198804.23, Diff: 1.52647089958
+h5 - M_CAST ACK 8 Sent to h1
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198805.11, Diff: 1.52354693413
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK Received 8 - Stamp: 1546198809.06, Diff: 0.0229690074921
+h5 - MCAST 8 to node h2.
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198809.54, Diff: 1.52670884132
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198809.65, Diff: 1.5244538784
+h5 - MCAST 8 to node h1.
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 7 Sent to h4
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198811.18, Diff: 1.5252790451
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198812.1, Diff: 1.52875590324
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198813.15, Diff: 1.53241205215
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198813.75, Diff: 1.5309278965
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198814.2, Diff: 0.0217370986938
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - M_CAST ACK 12 Sent to h3
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198818.21, Diff: 1.52679800987
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198818.87, Diff: 1.53497695923
+h5 - M_CAST ACK 12 Sent to h3
+h5 - M_CAST ACK 8 Sent to h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 8 Sent to h1
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198823.3, Diff: 0.0212371349335
+h5 - MCAST 8 to node h2.
+h5 - M_CAST ACK 12 Sent to h3
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198823.85, Diff: 1.52512598038
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - MCAST 8 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198824.39, Diff: 0.0257740020752
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198825.31, Diff: 2.52568101883
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198825.32, Diff: 1.53281712532
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 8 to node h1.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198825.43, Diff: 0.0399169921875
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198827.45, Diff: 2.63160395622
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198827.6, Diff: 1.52491497993
+h5 - M_CAST ACK 8 Sent to h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198832.1, Diff: 1.53986096382
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198832.58, Diff: 0.0249578952789
+h5 - MCAST 8 to node h2.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 8 Sent to h3
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198833.17, Diff: 1.9582118988
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198834.58, Diff: 2.38898897171
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - M_CAST ACK Received 8 - Stamp: 1546198836.66, Diff: 0.0204200744629
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198838.29, Diff: 0.0259799957275
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198838.66, Diff: 1.9856979847
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198838.8, Diff: 1.5325949192
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198839.66, Diff: 1.92879891396
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK 8 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK Received 8 - Stamp: 1546198843.85, Diff: 0.0220379829407
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198844.19, Diff: 1.54323101044
+h5 - MCAST 8 to node h3.
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198844.78, Diff: 0.0215480327606
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198845.86, Diff: 2.53735399246
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198850.94, Diff: 1.53664898872
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198850.95, Diff: 1.53635692596
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198851.94, Diff: 2.49936795235
+h5 - M_CAST ACK 8 Sent to h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198853.57, Diff: 1.53179192543
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198854.57, Diff: 0.0213060379028
+h5 - MCAST 8 to node h2.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198857.01, Diff: 1.53117799759
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198857.62, Diff: 1.53629302979
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198859.09, Diff: 1.53367090225
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198859.7, Diff: 1.53548598289
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198863.69, Diff: 1.53093910217
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198864.21, Diff: 0.0312609672546
+h5 - MCAST 8 to node h2.
+h5 - M_CAST ACK 8 Sent to h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198864.7, Diff: 2.00605916977
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - MCAST 8 to node h3.
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - MCAST 8 to node h1.
+h5 - M_CAST ACK 12 Sent to h3
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198865.81, Diff: 1.53010010719
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198865.81, Diff: 1.52833890915
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198866.64, Diff: 1.52969503403
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198866.82, Diff: 2.0361969471
+h5 - M_CAST ACK Received 8 - Stamp: 1546198867.64, Diff: 0.522767066956
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198867.82, Diff: 2.46872091293
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198868.71, Diff: 1.52994394302
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198869.65, Diff: 2.31767201424
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 8 Sent to h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198874.94, Diff: 1.54289507866
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198875.94, Diff: 1.64931893349
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198876.28, Diff: 1.54866099358
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198877.33, Diff: 1.53135490417
+h5 - M_CAST ACK Received 8 - Stamp: 1546198877.37, Diff: 0.0237481594086
+h5 - MCAST 8 to node h2.
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198878.32, Diff: 1.54494810104
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198880.91, Diff: 1.52894902229
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 8 Sent to h2
+h5 - M_CAST ACK Received 8 - Stamp: 1546198882.48, Diff: 0.025367975235
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - MCAST 8 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK Received 8 - Stamp: 1546198883.74, Diff: 0.161453008652
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h3.
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198885.05, Diff: 2.86409497261
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198887.23, Diff: 1.55775499344
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198887.86, Diff: 1.54778385162
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198888.87, Diff: 1.55926299095
+h5 - M_CAST ACK 8 Sent to h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198889.42, Diff: 1.55156087875
+h5 - M_CAST ACK 12 Sent to h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198890.9, Diff: 1.53537011147
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198892.14, Diff: 1.54194712639
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198893.32, Diff: 1.53213882446
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198894.33, Diff: 1.92752599716
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198894.49, Diff: 1.53878593445
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198895.33, Diff: 2.9340569973
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198895.38, Diff: 1.54386019707
+h5 - M_CAST ACK Received 8 - Stamp: 1546198895.49, Diff: 0.526603937149
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198897.51, Diff: 3.45354890823
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 8 Sent to h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198901.26, Diff: 1.70928812027
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198902.53, Diff: 1.92568898201
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198902.53, Diff: 1.91334581375
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 8 Sent to h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198906.31, Diff: 1.53759407997
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198907.62, Diff: 1.72192001343
+h5 - M_CAST ACK 12 Sent to h3
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198908.17, Diff: 1.7764840126
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198909.14, Diff: 0.363149166107
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198909.31, Diff: 1.64023804665
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK 8 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK 8 Sent to h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198914.33, Diff: 1.53790092468
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198914.42, Diff: 1.53164196014
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198914.67, Diff: 0.088919878006
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198916.85, Diff: 1.53041410446
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198917.28, Diff: 1.5551071167
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198920.04, Diff: 1.53199100494
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 8 Sent to h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK Received 8 - Stamp: 1546198922.62, Diff: 0.0331768989563
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198922.91, Diff: 1.55514407158
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198922.91, Diff: 1.55691695213
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198924.22, Diff: 1.66996002197
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198924.7, Diff: 2.10808491707
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198925.11, Diff: 0.0271580219269
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198925.23, Diff: 2.85126709938
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198928.03, Diff: 0.0263290405273
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198928.52, Diff: 1.53695392609
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198931.19, Diff: 0.0270478725433
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198932.01, Diff: 1.53175902367
+h5 - M_CAST ACK 8 Sent to h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK 8 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198937.19, Diff: 1.54701399803
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 8 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK Received 8 - Stamp: 1546198937.81, Diff: 0.0209069252014
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198938.13, Diff: 1.54124879837
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198939.13, Diff: 0.793116092682
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h4.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198942.73, Diff: 1.55216908455
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198943.32, Diff: 1.53900408745
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 8 Sent to h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198945.37, Diff: 1.54943108559
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198945.83, Diff: 1.53623890877
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198946.29, Diff: 1.52620220184
+h5 - M_CAST ACK 3 Sent to h1
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - Packet Loss. Retransmission...
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198948.98, Diff: 1.53710007668
+h5 - M_CAST ACK 1 Sent to h2
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198951.89, Diff: 0.0208470821381
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198951.91, Diff: 1.52978587151
+h5 - M_CAST ACK 7 Sent to h4
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198953.93, Diff: 1.5240111351
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198954.94, Diff: 1.52338004112
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - M_CAST ACK 1 Sent to h2
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198958.98, Diff: 1.52323389053
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198959.18, Diff: 1.53001594543
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198959.56, Diff: 1.53248810768
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198959.72, Diff: 1.55009293556
+h5 - M_CAST ACK 7 Sent to h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198961.06, Diff: 1.53578090668
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198961.75, Diff: 1.53507494926
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198964.84, Diff: 0.0288770198822
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198966.86, Diff: 1.5445728302
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198966.86, Diff: 3.24743080139
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198967.48, Diff: 0.0310950279236
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198967.9, Diff: 1.5501999855
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198971.85, Diff: 1.55449080467
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - M_CAST ACK Received 8 - Stamp: 1546198971.93, Diff: 0.0412540435791
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198973.35, Diff: 1.52489686012
+h5 - MCAST 8 to node h4.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198973.96, Diff: 2.09077882767
+h5 - M_CAST ACK Received 8 - Stamp: 1546198974.02, Diff: 0.028354883194
+h5 - MCAST 8 to node h2.
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198976.03, Diff: 2.60929679871
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198978.44, Diff: 0.0223519802094
+h5 - MCAST 8 to node h2.
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198979.51, Diff: 1.52421092987
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - MCAST 8 to node h4.
+h5 - M_CAST ACK Received 8 - Stamp: 1546198980.0, Diff: 0.0241961479187
+h5 - MCAST 8 to node h2.
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198980.49, Diff: 1.52552318573
+h5 - MCAST 8 to node h3.
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198984.66, Diff: 1.52494907379
+h5 - Socket Timeout in M_CAST mode. Destination: h4
+h5 - M_CAST ACK 7 Sent to h4
+h5 - M_CAST ACK 8 Sent to h2
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198985.07, Diff: 1.5421359539
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198985.6, Diff: 1.53752589226
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198985.76, Diff: 1.52517795563
+h5 - M_CAST ACK 1 Sent to h2
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198986.54, Diff: 1.52384305
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198987.62, Diff: 1.52484512329
+h5 - DELIVER Received 3 USEFUL - Stamp: 1546198988.19, Diff: 1.52480912209
+h5 - Socket Timeout in M_CAST mode. Destination: h3
+h5 - Packet Loss. Retransmission...
+h5 - M_CAST ACK Received 8 - Stamp: 1546198990.87, Diff: 0.0266041755676
+h5 - MCAST 8 to node h2.
+h5 - M_CAST ACK 7 Sent to h4
+h5 - MCAST 8 to node h3.
+h5 - DELIVER Received 7 USEFUL - Stamp: 1546198991.71, Diff: 1.52470898628
+h5 - MCAST 8 to node h1.
+h5 - MCAST 8 to node h4.
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198992.88, Diff: 2.58958983421
+h5 - DELIVER Received 1 USEFUL - Stamp: 1546198993.26, Diff: 1.52385210991
+h5 - M_CAST ACK 8 Sent to h3
+h5 - M_CAST ACK 12 Sent to h3
+h5 - Socket Timeout in M_CAST mode. Destination: h1
+h5 - M_CAST ACK 8 Sent to h1
+h5 - M_CAST ACK 3 Sent to h1
+h5 - M_CAST ACK 7 Sent to h4
+h5 - DELIVER Received 12 USEFUL - Stamp: 1546198998.06, Diff: 1.53236293793
+h5 - Socket Timeout in M_CAST mode. Destination: h2
+h5 - Socket Timeout in M_CAST mode. Destination: h1

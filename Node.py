@@ -189,7 +189,7 @@ class MulticastNode:
 		for node_ in self.interfaces:
 			generated_port = 10000 * self.id + int(node_[-1])
 			self.socks[node_] = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-			self.socks[node_].bind(('127.0.0.1', generated_port))
+			self.socks[node_].bind(("10.0.0." + str(self.id), generated_port))
 			self.delivered_nums[node_] = []
 			self.comm_state[node_] = False
 			self.ack_table[node_] = False
@@ -198,6 +198,7 @@ class MulticastNode:
 			self.ready[node_] = False
 			self.stop_events[node_] = threading.Event()
 
+#			self.interfaces[node_] = ("127.0.0.1", 10000*int(node_[-1]) + self.id)
 			self.finish_consensus[node_] = dict()
 			for num in self.seq_list:
 				self.finish_consensus[node_][str(num)] = False
@@ -229,7 +230,6 @@ class MulticastNode:
 	def multicast(self, mType, num, order=None):
 		self.state = (Mode.M_CAST, self.sequence_number if not order else order, num)
 		serialized_msg = self.makePacket(mType, num, order)
-
 		for node in self.interfaces:
 			self.socks[node].settimeout(4 * self.period)
 			self.socks[node].sendto(serialized_msg, self.interfaces[node])
@@ -474,7 +474,6 @@ class MulticastNode:
 			except Exception as e:
 				print traceback.format_exc()
 				raise e
-
 		return
 
 	def logDeliveredMsgs(self):
@@ -492,38 +491,40 @@ class MulticastNode:
 		logger.close()
 
 	def logStatistics(self):
-		logger = open('Statistics_' + self.node_name + ".txt", 'a')
+		#logger = open('Statistics_' + self.node_name + ".txt", 'a')
 
-		logger.write("--------------------------------------------------\n")
-		logger.write(str(datetime.datetime.now()) + '\n')
-		logger.write("--------------------------------------------------\n")
+		print "--------------------------------------------------\n"
+		print str(datetime.datetime.now()) + '\n'
+		print "--------------------------------------------------\n"
 
 		_count, _upayload, _tpayload, _total_time = this_node.getStatistics()
 
-		logger.write("Node:          ", name)
-		logger.write("Count:         ", _count)
-		logger.write("Useful payload:", _upayload)
-		logger.write("Total payload: ", _tpayload)
-		logger.write("Total time:    ", _total_time)
-		logger.write("Avg. time:     ", float(_total_time) / _count)
+		print "Node:          ", name
+		print "Count:         ", _count
+		print "Useful payload:", _upayload
+		print "Total payload: ", _tpayload
+		print "Total time:    ", _total_time
+		print "Avg. time:     ", float(_total_time) / _count
 
-		logger.write('\n')
-		logger.close()
+		print '\n'
+		#logger.close()
 
 	def run(self):
 		self.createLog("{0} - Starting with {1}...".format(self.node_name, self.seq_list))
 
 		for node, peer in self.interfaces.iteritems():
 			threading.Thread(group=None, target=self.onReceive, name="onReceive_" + node, args=(self.socks[node], node, peer)).start()
-
 		o = 0
 		for num in self.seq_list:
 			self.clock_mtx.acquire()
 			self.clock[self.node_name] += 1
 			self.clock_mtx.release()
-
-			self.multicast(1, num, order=o)
-
+			
+			try:
+				self.multicast(1, num, order=o)
+			except Exception as e:
+				print traceback.format_exc()
+				raise e
 			if self.dpoisson:
 				poisson_delay = np.random.poisson(self.period + o * self.period)
 				time.sleep(poisson_delay)
@@ -532,6 +533,7 @@ class MulticastNode:
 				time.sleep(self.period)
 
 			o += 1
+		time.sleep(300)
 
 	def finish(self, peerName):
 		self.createLog("{} - Finished. Cleaning up...".format(self.node_name))
@@ -604,7 +606,6 @@ def parseTopology(topoFile):
 	return topology
 
 if __name__ == '__main__':
-
 	name = sys.argv[1]
 	count = int(sys.argv[2])
 	slist = map(int, sys.argv[3:count + 3])
@@ -612,13 +613,9 @@ if __name__ == '__main__':
 	topoFile = sys.argv[count + 4]
 	dpoisson = (sys.argv[count + 5] == 'True')
 	logFile = sys.argv[count + 6]
-
 	topology = parseTopology(topoFile)
 	this_node = MulticastNode(name, slist, topology, period, logFile, dpoisson)
 	this_node.run()
-
-	print "SLEEPING..."
-	time.sleep(120)
 	this_node.killThreads()
 	this_node.logStatistics()
 	sys.exit(0)
