@@ -490,11 +490,12 @@ class MulticastNode:
 		logger.write('\n')
 		logger.close()
 
-	def logStatistics(self):
+	def logStatistics(self, params):
 		#logger = open('Statistics_' + self.node_name + ".txt", 'a')
 
 		print "--------------------------------------------------\n"
 		print str(datetime.datetime.now()) + '\n'
+		print "PPN: {0}, CONF: {1}, Period: {2}, Poisson: {3}".format(params[0], params[1], params[2], params[3])
 		print "--------------------------------------------------\n"
 
 		_count, _upayload, _tpayload, _total_time = this_node.getStatistics()
@@ -617,5 +618,5 @@ if __name__ == '__main__':
 	this_node = MulticastNode(name, slist, topology, period, logFile, dpoisson)
 	this_node.run()
 	this_node.killThreads()
-	this_node.logStatistics()
+	this_node.logStatistics((count, topoFile, period, dpoisson))
 	sys.exit(0)
