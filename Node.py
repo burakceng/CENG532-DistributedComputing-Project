@@ -514,11 +514,6 @@ class MulticastNode:
 
 			o += 1
 
-		time.sleep(120)
-		print "STOPPING THREADS"
-		for n in self.interfaces:
-			self.stop_events[n].set()
-
 	def finish(self, peerName):
 		self.createLog("{} - Finished. Cleaning up...".format(self.node_name))
 
@@ -551,6 +546,11 @@ class MulticastNode:
 
 	def isClosed(self):
 		return self.closed
+
+	def killThreads(self):
+		print "STOPPING THREADS"
+		for n in self.interfaces:
+			self.stop_events[n].set()
 
 	def _alreadyProcessed(self, seq_num):
 		for n, v in self.delivered_nums.iteritems():
@@ -610,6 +610,9 @@ if __name__ == '__main__':
 	#print "--------------------------------------------------------------"
 	#print "\n"
 
-	#sys.exit(0)
+	print "SLEEPING..."
+	time.sleep(120)
 
-	return this_node.getStatistics()
+	print "STATISTICS"
+	print this_node.getStatistics()
+	sys.exit(0)
