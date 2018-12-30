@@ -66,13 +66,14 @@ if __name__ == '__main__':
 		if pid == 0:
 			start_time = time.time()
 			h_i = net.get(node)
-			h_i.cmd('sudo python Node.py ' + node + ' ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict[node])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_' + node + '.txt')
+			result = h_i.cmd('sudo python Node.py ' + node + ' ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict[node])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_' + node + '.txt')
 			#while time.time() - start_time < 120:
 			#	time.sleep(1)
+			print result
 		else:
 			print "{} - child forked.".format(node)
 
-	time.sleep(120)
+	time.sleep(125)
 
 	#h1 = net.get('h1')
 	#h2 = net.get('h2')
