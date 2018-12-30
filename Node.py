@@ -69,6 +69,8 @@ PACKET CONTENT:
 - Source: Node name
 - Destination: A list of names of receiver nodes
 - SequenceNumber: Sequence number of the packet
+- LocalOrder: the index (starts from 0) of the sequence number in 
+				the node's sequence number list
 - Timestamp: Global timestamp w.r.to the CPU clock
 - Vector: Logical clock of the sender node(advanced 1 unit in
 			corresponding entry)
@@ -144,6 +146,7 @@ class MulticastNode:
 		self.logging_mtx = threading.Lock()
 		self.heartbeat_mtx = threading.Lock()
 		self.writer_lock = threading.Lock()
+		self.statics_mtx = threading.Lock()
 
 		self.id = int(name[-1])
 		self.node_name = name
@@ -170,9 +173,13 @@ class MulticastNode:
 		self.clock = dict()
 		self.queue = []
 
+		self.packet_count = 0
+		self.useful_payload = 0.0
+		self.total_transmitted_payload = 0.0
+		self.total_stable_delivery_time = 0.0
+
 		self.finish_consensus = dict()
-		#self.order_consensus = dict()
-		#self.stamps = dict()
+		self.stop_events = dict()
 
 		self.network = topology
 		self.interfaces = topology[self.node_name]
@@ -189,8 +196,7 @@ class MulticastNode:
 			self.del_ack_table[node_] = False
 			self.sock_state[node_] = True
 			self.ready[node_] = False
-
-			#self.order_consensus[node_] = [False] * len(self.seq_list)
+			self.stop_events[node_] = threading.Event()
 
 			self.finish_consensus[node_] = dict()
 			for num in self.seq_list:
@@ -218,9 +224,6 @@ class MulticastNode:
 				'Timestamp': time.time() if not old_stamp else old_stamp, 
 				'Vector': self.clock }
 
-		#if not self.stamps.get((pType, seq)):
-		#	self.stamps[(pType, seq)] = data['Timestamp']
-
 		return pickle.dumps(data)
 
 	def multicast(self, mType, num, order=None):
@@ -231,6 +234,12 @@ class MulticastNode:
 			self.socks[node].settimeout(4 * self.period)
 			self.socks[node].sendto(serialized_msg, self.interfaces[node])
 			self.createLog("{0} - MCAST {1} to node {2}.".format(self.node_name, num, node))
+
+			self.statics_mtx.acquire()
+			self.packet_count += 1
+			self.total_transmitted_payload += sys.getsizeof(serialized_msg)
+			self.statics_mtx.release()
+
 			time.sleep(0.5)
 
 	def deliver(self):
@@ -241,7 +250,6 @@ class MulticastNode:
 		deliverable = heapq.heappop(self.queue)
 		self.queue_mtx.release()
 
-		#if self._alreadyProcessed(deliverable[2]['SequenceNumber']) or deliverable[2]['LocalOrder'] >= len(self.seq_list):
 		if self._alreadyProcessed(deliverable[2]['SequenceNumber']):
 			return
 
@@ -249,12 +257,14 @@ class MulticastNode:
 		self.createLog("{0} - Delivering {1}, Received at: {2}...".format(self.node_name, deliverable[2]['SequenceNumber'], 
 																				deliverable[2]['Timestamp']))
 
+		self.statics_mtx.acquire()
+		self.useful_payload += sys.getsizeof(pickle.dumps(deliverable[2]))
+		self.total_stable_delivery_time += delivery_stamp - deliverable[2]['Timestamp']
+		self.statics_mtx.release()
+
 		self.updateClock(deliverable[2]['Vector'])
 
-		#self.total_order_mutex.acquire()
 		self.delivered_nums[deliverable[2]['Source']].append((deliverable[0], deliverable[1], deliverable[2]['SequenceNumber'], delivery_stamp))
-		#self.order_consensus[deliverable[2]['Source']][deliverable[2]['LocalOrder']] = True
-		#self.total_order_mutex.release()
 
 		self.createLog("{0} - Deliver {1} OK - Source: {2}.".format(self.node_name, deliverable[2]['SequenceNumber'], deliverable[2]['Source']))
 		self.createLog('{} - DELIVERY LOGGING...'.format(self.node_name))
@@ -274,13 +284,16 @@ class MulticastNode:
 
 		while True:
 
-			#if self.finishConsensus() and self.sequence_number >= len(self.seq_list):
+			if self.stop_events[peerName].is_set():
+				break
+
 			if self.finishConsensus():
 				self.state = (Mode.FINISH, self.state[1], self.state[2])
 
 			try:
 
-				data = pickle.loads(sockHandle.recv(1024))
+				rawData = sockHandle.recv(1024)
+				data = pickle.loads(rawData)
 				t = data['Type']
 
 				if t == 1:
@@ -288,17 +301,26 @@ class MulticastNode:
 					if self.state[0] == Mode.D_CAST:
 						continue
 
+					receipt = time.time()
 					if not self._alreadyProcessed(data['SequenceNumber']) and not _alreadyInQueue(data['SequenceNumber'], self.queue):
 						self.queue_mtx.acquire()
 						heapq.heappush(self.queue, (data['Timestamp'], data['LocalOrder'], data))
 						self.queue_mtx.release()
 
-						receipt = time.time()
 						self.createLog("{0} - M_CAST Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
 											data['Timestamp'], receipt - data['Timestamp']))
 
+						self.statics_mtx.acquire()
+						self.useful_payload += sys.getsizeof(rawData)
+						self.statics_mtx.release()
+
 					serialized_msg = self.makePacket(2, data['SequenceNumber'])
 					sockHandle.sendto(serialized_msg, peerAddr)
+
+					self.statics_mtx.acquire()
+					self.packet_count += 1
+					self.total_transmitted_payload += sys.getsizeof(serialized_msg)
+					self.statics_mtx.release()
 
 					self.createLog("{0} - M_CAST ACK {1} Sent to {2}".format(self.node_name, data['SequenceNumber'], data['Source']))
 
@@ -310,26 +332,31 @@ class MulticastNode:
 					else:
 						to_be_checked = self.seq_list[self.sequence_number]
 
+					receipt = time.time()
 					if data['SequenceNumber'] != to_be_checked:
 						self.createLog("{} - Packet Loss. Retransmission...".format(self.node_name))
 
-						#serialized_msg = self.makePacket(1, self.seq_list[self.sequence_number])
 						serialized_msg = self.makePacket(1, to_be_checked)
-						#serialized_msg = self.makePacket(1, to_be_checked, old_stamp=self.stamps[(1, to_be_checked)])
 						sockHandle.sendto(serialized_msg, peerAddr)
 
+						self.statics_mtx.acquire()
+						self.packet_count += 1
+						self.total_transmitted_payload += sys.getsizeof(serialized_msg)
+						self.statics_mtx.release()
+
 					else:
-						receipt = time.time()
+						if not self.ack_table[peerName]:
+							self.statics_mtx.acquire()
+							self.useful_payload += sys.getsizeof(pickle.dumps(data))
+							self.statics_mtx.release()
+
 						self.ack_table[peerName] = True
 
-						self.createLog("{0} - M_CAST ACK Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
+						self.createLog("{0} - M_CAST ACK Received {1} - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
 											receipt, receipt - data['Timestamp']))
 
-						#serialized_msg = self.makePacket(4, data['SequenceNumber'], order=data['LocalOrder'])
-						#serialized_msg = self.makePacket(4, data['SequenceNumber'])
-						#sockHandle.sendto(serialized_msg, peerAddr)
-
 						if all(self.ack_table.values()):
+							# All-or-None mechanism
 							self.state = (Mode.D_CAST, self.sequence_number, data['SequenceNumber'])
 							self.multicast(4, data['SequenceNumber'])
 
@@ -338,10 +365,6 @@ class MulticastNode:
 					receipt = time.time()
 					self.createLog("{0} - DELIVER Received {1} USEFUL - Stamp: {2}, Diff: {3}".format(self.node_name, data['SequenceNumber'], 
 									receipt, receipt - data['Timestamp']))
-
-					#if not all(self.order_consensus[data['Source']][:data['LocalOrder']]):
-					#	self.createLog("{0} - Local Order is not consistent w.r.to node {1}.".format(self.node_name, data['Source']))
-					#	continue
 
 					self.total_order_mutex.acquire()
 					self.deliver()
@@ -352,12 +375,23 @@ class MulticastNode:
 					serialized_msg = self.makePacket(8, data['SequenceNumber'])
 					sockHandle.sendto(serialized_msg, peerAddr)
 
+					self.statics_mtx.acquire()
+					self.packet_count += 1
+					self.total_transmitted_payload += sys.getsizeof(serialized_msg)
+					self.statics_mtx.release()
+
 				elif t == 8:
 					# Deliver Request ACK
 					if self.state[0] == Mode.M_CAST:
 						continue
 
 					receipt = time.time()
+
+					if not self.del_ack_table[data['Source']]:
+						self.statics_mtx.acquire()
+						self.useful_payload += sys.getsizeof(pickle.dumps(data))
+						self.statics_mtx.release()
+
 					self.del_ack_table[data['Source']] = True
 					self.createLog("{0} - DELIVER ACK Received from {1} {2} USEFUL - Stamp: {3}, Diff: {4}".format(self.node_name, data['Source'], 
 																					data['SequenceNumber'], receipt, receipt - data['Timestamp']))
@@ -365,6 +399,7 @@ class MulticastNode:
 					self.finish_consensus[data['Source']][str(data['SequenceNumber'])] = True
 
 					if all(self.ack_table.values()) and all(self.del_ack_table.values()):
+						# All-or-None mechanism
 						self.ack_table = dict.fromkeys(self.ack_table, False)
 						self.del_ack_table = dict.fromkeys(self.del_ack_table, False)
 
@@ -394,6 +429,12 @@ class MulticastNode:
 					heartbeat_msg = self.makePacket(32, 0)
 					self.bcSock.sendto(heartbeat_msg, peerAddr)
 
+					self.statics_mtx.acquire()
+					self.packet_count += 1
+					self.total_transmitted_payload += sys.getsizeof(heartbeat_msg)
+					self.useful_payload += sys.getsizeof(heartbeat_msg)
+					self.statics_mtx.release()
+
 				elif t == 32:
 					# Heartbeat ACK message
 					self.heartbeat_mtx.acquire()
@@ -412,10 +453,20 @@ class MulticastNode:
 					serialized_msg = self.makePacket(1, data['SequenceNumber'], order=data['LocalOrder'], old_stamp=data['Timestamp'])
 					sockHandle.sendto(serialized_msg, peerAddr)
 
+					self.statics_mtx.acquire()
+					self.packet_count += 1
+					self.total_transmitted_payload += sys.getsizeof(serialized_msg)
+					self.statics_mtx.release()
+
 				elif self.state[0] == Mode.D_CAST:
 					self.createLog("{0} - Socket Timeout in D_CAST mode. Destination: {1}".format(self.node_name, peerName))
 					serialized_msg = self.makePacket(4, data['SequenceNumber'], order=data['LocalOrder'])
 					sockHandle.sendto(serialized_msg, peerAddr)
+
+					self.statics_mtx.acquire()
+					self.packet_count += 1
+					self.total_transmitted_payload += sys.getsizeof(serialized_msg)
+					self.statics_mtx.release()
 
 				elif self.state[0] == Mode.FINISH:
 					self.createLog("{} - DONE.".format(self.node_name))
@@ -423,10 +474,6 @@ class MulticastNode:
 			except Exception as e:
 				print traceback.format_exc()
 				raise e
-
-		#self.socks[peerName].close()
-		#self.comm_state[peerName] = True
-		#self.createLog("{0} - Socket for {1} is closed.".format(self.node_name, peerName))
 
 		return
 
@@ -456,7 +503,6 @@ class MulticastNode:
 			self.clock[self.node_name] += 1
 			self.clock_mtx.release()
 
-			#self.multicast(1, num, order=self.sequence_number)
 			self.multicast(1, num, order=o)
 
 			if self.dpoisson:
@@ -468,23 +514,10 @@ class MulticastNode:
 
 			o += 1
 
-		"""
-		step = 1
-		while True:
-
-			if step > self.seq_list[-1]:
-				break
-
-			if step in self.seq_list:
-				self.clock_mtx.acquire()
-				self.clock[self.node_name] += 1
-				self.clock_mtx.release()
-
-				self.multicast(1, step, order=self.sequence_number)
-
-			time.sleep(self.period)
-			step += 1
-		"""
+		time.sleep(120)
+		print "STOPPING THREADS"
+		for n in self.interfaces:
+			self.stop_events[n].set()
 
 	def finish(self, peerName):
 		self.createLog("{} - Finished. Cleaning up...".format(self.node_name))
@@ -527,16 +560,15 @@ class MulticastNode:
 
 		return False or (seq_num in self.seq_list)
 
-	"""
-	def isLocalOrderPreserved(self):
-		for k, v in self.delivered_nums.iteritems():
-			order = v[0][0]
-			for item in v[1:]:
-				if order > item[0]:
-					return False
+	def getStatistics(self):
+		self.statics_mtx.acquire()
+		saved_count = self.packet_count
+		saved_useful_payload = self.useful_payload
+		saved_total_payload = self.total_transmitted_payload
+		saved_total_time = self.total_stable_delivery_time
+		self.statics_mtx.release()
 
-		return True
-	"""
+		return saved_count, saved_useful_payload, saved_total_payload, saved_total_time
 
 def parseTopology(topoFile):
 	topology = dict()
@@ -565,3 +597,17 @@ if __name__ == '__main__':
 	topology = parseTopology(topoFile)
 	this_node = MulticastNode(name, slist, topology, period, logFile, dpoisson)
 	this_node.run()
+
+	_count, _upayload, _tpayload, _total_time = this_node.getStatistics()
+
+	print "--------------------------STATISTICS--------------------------"
+	print "Node:          ", name
+	print "Count:         ", _count
+	print "Useful payload:", _upayload
+	print "Total payload: ", _tpayload
+	print "Total time:    ", _total_time
+	print "Avg. time:     ", float(_total_time) / _count
+	print "--------------------------------------------------------------"
+	print "\n"
+
+	sys.exit(0)
