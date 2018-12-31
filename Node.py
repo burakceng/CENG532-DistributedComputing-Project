@@ -139,7 +139,7 @@ class Mode(enum.Enum):
 
 class MulticastNode:
 
-	def __init__(self, name, seq_list, topology, p=5.0, logFile=None, dpoisson=False):
+	def __init__(self, name, seq_list, topology, p=5.0, logFile=None, dpoisson=None):
 		self.clock_mtx = threading.Lock()
 		self.queue_mtx = threading.Lock()
 		self.total_order_mutex = threading.Lock()
@@ -527,7 +527,8 @@ class MulticastNode:
 				print traceback.format_exc()
 				raise e
 			if self.dpoisson:
-				poisson_delay = np.random.poisson(self.period + o * self.period)
+				#poisson_delay = np.random.poisson(self.period + o * self.period)
+				poisson_delay = np.random.poisson(1. / self.dpoisson)
 				time.sleep(poisson_delay)
 
 			else:
