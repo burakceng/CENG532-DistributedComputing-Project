@@ -528,7 +528,7 @@ class MulticastNode:
 				raise e
 			if self.dpoisson:
 				#poisson_delay = np.random.poisson(self.period + o * self.period)
-				poisson_delay = np.random.poisson(1. / self.dpoisson)
+				poisson_delay = 1. / np.random.poisson(self.dpoisson)
 				time.sleep(poisson_delay)
 
 			else:
