@@ -1,22 +1,8 @@
 --------------------------------------------------
-2018-12-31 03:26:42.215665
+2018-12-31 05:29:16.938395
 --------------------------------------------------
-From: h2 - TimeStamp: 1546255572.92 - Sequence Number: 1 - Delivered: 1546255576.64.
-From: h2 - TimeStamp: 1546255576.94 - Sequence Number: 10 - Delivered: 1546255586.07.
-From: h2 - TimeStamp: 1546255582.97 - Sequence Number: 12 - Delivered: 1546255590.75.
-From: h2 - TimeStamp: 1546255587.0 - Sequence Number: 14 - Delivered: 1546255597.29.
-From: h2 - TimeStamp: 1546255596.01 - Sequence Number: 17 - Delivered: 1546255601.19.
-From: h3 - TimeStamp: 1546255573.0 - Sequence Number: 7 - Delivered: 1546255579.99.
-From: h3 - TimeStamp: 1546255575.0 - Sequence Number: 9 - Delivered: 1546255583.5.
-From: h3 - TimeStamp: 1546255580.01 - Sequence Number: 13 - Delivered: 1546255588.13.
-From: h3 - TimeStamp: 1546255586.02 - Sequence Number: 15 - Delivered: 1546255595.17.
-From: h3 - TimeStamp: 1546255593.04 - Sequence Number: 19 - Delivered: 1546255600.15.
-From: h1 - TimeStamp: 1546255573.0 - Sequence Number: 4 - Delivered: 1546255582.64.
-From: h1 - TimeStamp: 1546255576.01 - Sequence Number: 6 - Delivered: 1546255583.63.
-From: h1 - TimeStamp: 1546255598.04 - Sequence Number: 25 - Delivered: 1546255602.22.
-From: h4 - TimeStamp: 1546255576.89 - Sequence Number: 5 - Delivered: 1546255583.65.
-From: h4 - TimeStamp: 1546255580.9 - Sequence Number: 8 - Delivered: 1546255589.15.
-From: h4 - TimeStamp: 1546255584.92 - Sequence Number: 20 - Delivered: 1546255591.75.
-From: h4 - TimeStamp: 1546255590.93 - Sequence Number: 23 - Delivered: 1546255597.64.
-From: h4 - TimeStamp: 1546255592.5 - Sequence Number: 2 - Delivered: 1546255599.15.
+From: h3 - TimeStamp: 1546262939.62 - Sequence Number: 8 - Delivered: 1546262942.72.
+From: h3 - TimeStamp: 1546262941.63 - Sequence Number: 9 - Delivered: 1546262951.94.
+From: h4 - TimeStamp: 1546262941.59 - Sequence Number: 10 - Delivered: 1546262950.89.
+From: h4 - TimeStamp: 1546262942.14 - Sequence Number: 3 - Delivered: 1546262956.94.
 

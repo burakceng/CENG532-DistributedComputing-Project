@@ -1854,3 +1854,19 @@ Total time:     66.1281139851
 Avg. time:      0.0849975758163
 
 
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 05:34:03.698496
+
+PPN: 2, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          360
+Useful payload: 2338.0
+Total payload:  101194.0
+Total time:     78.4522342682
+Avg. time:      0.217922872967
+
+
