@@ -926,3 +926,819 @@ Total time:     183.7836833
 Avg. time:      0.232932424968
 
 
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:01:42.335590
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          379
+Useful payload: 5937.0
+Total payload:  106374.0
+Total time:     165.878420115
+Avg. time:      0.437673931701
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:07:13.535047
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          370
+Useful payload: 3541.0
+Total payload:  103999.0
+Total time:     49.2343971729
+Avg. time:      0.133065938305
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:12:44.673576
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          357
+Useful payload: 4742.0
+Total payload:  100322.0
+Total time:     109.191426992
+Avg. time:      0.305858338914
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:18:15.952840
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          402
+Useful payload: 4139.0
+Total payload:  112715.0
+Total time:     22.3151345253
+Avg. time:      0.0555102848888
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:23:47.061743
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          369
+Useful payload: 5341.0
+Total payload:  103537.0
+Total time:     71.2217218876
+Avg. time:      0.193012796443
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:29:18.311980
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          414
+Useful payload: 5338.0
+Total payload:  115976.0
+Total time:     15.2925896645
+Avg. time:      0.0369386223779
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:34:49.281809
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          396
+Useful payload: 6534.0
+Total payload:  111195.0
+Total time:     114.023145676
+Avg. time:      0.287937236555
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:40:20.721626
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          379
+Useful payload: 5936.0
+Total payload:  106011.0
+Total time:     29.3256585598
+Avg. time:      0.0773764078095
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:45:52.002107
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          390
+Useful payload: 6530.0
+Total payload:  109281.0
+Total time:     92.8757901192
+Avg. time:      0.238143051588
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:51:23.281978
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          371
+Useful payload: 5942.0
+Total payload:  104189.0
+Total time:     52.4105303288
+Avg. time:      0.141268275819
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 20:56:57.220993
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          355
+Useful payload: 6752.0
+Total payload:  102723.0
+Total time:     201.803046465
+Avg. time:      0.568459285817
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:02:28.276184
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          341
+Useful payload: 4272.0
+Total payload:  97891.0
+Total time:     13.8900978565
+Avg. time:      0.0407334247992
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:07:59.581858
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          322
+Useful payload: 5516.0
+Total payload:  93382.0
+Total time:     114.433759212
+Avg. time:      0.35538434538
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:13:30.622754
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          348
+Useful payload: 6134.0
+Total payload:  99997.0
+Total time:     105.542694569
+Avg. time:      0.303283605082
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:19:01.886157
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          356
+Useful payload: 6131.0
+Total payload:  102801.0
+Total time:     35.4964051247
+Avg. time:      0.0997090031592
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:24:33.266282
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          361
+Useful payload: 5511.0
+Total payload:  103491.0
+Total time:     132.308319807
+Avg. time:      0.366505041017
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:30:04.453089
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          347
+Useful payload: 6128.0
+Total payload:  100019.0
+Total time:     96.9370150566
+Avg. time:      0.279357392094
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:35:35.733070
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          345
+Useful payload: 5514.0
+Total payload:  99820.0
+Total time:     24.6384782791
+Avg. time:      0.0714158790699
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:41:07.033049
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          357
+Useful payload: 3650.0
+Total payload:  102616.0
+Total time:     9.03905820847
+Avg. time:      0.02531949078
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:46:38.335702
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          354
+Useful payload: 5514.0
+Total payload:  101742.0
+Total time:     42.6783952713
+Avg. time:      0.120560438619
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:52:12.163553
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          779
+Useful payload: 13308.0
+Total payload:  220648.0
+Total time:     164.658136606
+Avg. time:      0.211371163808
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 21:57:43.281917
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          793
+Useful payload: 12663.0
+Total payload:  224744.0
+Total time:     325.393552542
+Avg. time:      0.410332348729
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:03:14.449304
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          771
+Useful payload: 10088.0
+Total payload:  218466.0
+Total time:     116.603059053
+Avg. time:      0.151236133662
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:08:45.733412
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          757
+Useful payload: 13304.0
+Total payload:  214825.0
+Total time:     91.6960105896
+Avg. time:      0.121130793381
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:14:16.833434
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          797
+Useful payload: 10736.0
+Total payload:  225240.0
+Total time:     45.5940105915
+Avg. time:      0.057207039638
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:19:48.180215
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          774
+Useful payload: 13301.0
+Total payload:  219182.0
+Total time:     74.1517894268
+Avg. time:      0.0958033455127
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:25:19.493296
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          797
+Useful payload: 13308.0
+Total payload:  225209.0
+Total time:     172.560410023
+Avg. time:      0.216512434157
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:30:50.594173
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          774
+Useful payload: 12666.0
+Total payload:  218409.0
+Total time:     92.2163832188
+Avg. time:      0.119142613978
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:36:21.730195
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          803
+Useful payload: 13946.0
+Total payload:  227359.0
+Total time:     142.133913994
+Avg. time:      0.177003628884
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:41:52.984883
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: False
+--------------------------------------------------
+
+Node:           h4
+Count:          736
+Useful payload: 10084.0
+Total payload:  208135.0
+Total time:     47.9901590347
+Avg. time:      0.0652040204276
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:47:33.985879
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          400
+Useful payload: 4732.0
+Total payload:  112192.0
+Total time:     23.0951299667
+Avg. time:      0.0577378249168
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:52:59.435542
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          373
+Useful payload: 5340.0
+Total payload:  104718.0
+Total time:     72.2367579937
+Avg. time:      0.193664230546
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 22:58:30.582106
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          386
+Useful payload: 3538.0
+Total payload:  108402.0
+Total time:     8.9910800457
+Avg. time:      0.0232929534863
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:03:57.731964
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          368
+Useful payload: 6534.0
+Total payload:  103494.0
+Total time:     64.2499489784
+Avg. time:      0.174592252659
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:15:01.160126
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          398
+Useful payload: 6538.0
+Total payload:  111576.0
+Total time:     174.082462311
+Avg. time:      0.437393121384
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:20:33.551381
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          376
+Useful payload: 5340.0
+Total payload:  105603.0
+Total time:     28.0154311657
+Avg. time:      0.0745091254407
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:26:07.610260
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          385
+Useful payload: 5936.0
+Total payload:  108448.0
+Total time:     33.2181844711
+Avg. time:      0.0862809986263
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:31:40.932074
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          382
+Useful payload: 4736.0
+Total payload:  107107.0
+Total time:     92.2422339916
+Avg. time:      0.241471816732
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:37:17.081886
+
+PPN: 5, CONF: configuration2.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          380
+Useful payload: 6536.0
+Total payload:  106480.0
+Total time:     123.122100353
+Avg. time:      0.324005527245
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:42:39.898474
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          348
+Useful payload: 4890.0
+Total payload:  100285.0
+Total time:     63.0747737885
+Avg. time:      0.181249349967
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:48:22.086771
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          354
+Useful payload: 6135.0
+Total payload:  101736.0
+Total time:     17.551558733
+Avg. time:      0.049580674387
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:53:45.261823
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          358
+Useful payload: 5504.0
+Total payload:  102901.0
+Total time:     22.9096794128
+Avg. time:      0.063993517913
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-30 23:59:21.387831
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          371
+Useful payload: 4892.0
+Total payload:  106394.0
+Total time:     38.1338799
+Avg. time:      0.102786738275
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:04:45.610757
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          351
+Useful payload: 5514.0
+Total payload:  100431.0
+Total time:     47.6845500469
+Avg. time:      0.135853418937
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:10:23.956834
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          355
+Useful payload: 5512.0
+Total payload:  102226.0
+Total time:     108.414357424
+Avg. time:      0.305392556123
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:15:51.907293
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          358
+Useful payload: 5514.0
+Total payload:  103253.0
+Total time:     24.6381411552
+Avg. time:      0.0688216233387
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:21:23.207951
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          356
+Useful payload: 5514.0
+Total payload:  102492.0
+Total time:     66.9261419773
+Avg. time:      0.187994780835
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:26:48.631766
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          342
+Useful payload: 4892.0
+Total payload:  98350.0
+Total time:     35.9197916985
+Avg. time:      0.105028630697
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:32:18.831820
+
+PPN: 5, CONF: configuration3.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          354
+Useful payload: 6136.0
+Total payload:  102040.0
+Total time:     37.8426258564
+Avg. time:      0.106900073041
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:43:32.635102
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          816
+Useful payload: 10732.0
+Total payload:  231324.0
+Total time:     96.2868225574
+Avg. time:      0.117998557056
+
+
+STOPPING THREADS
+--------------------------------------------------
+
+2018-12-31 00:49:02.682145
+
+PPN: 5, CONF: configuration4.xml, Period: 1.0, Poisson: True
+--------------------------------------------------
+
+Node:           h4
+Count:          808
+Useful payload: 10730.0
+Total payload:  228580.0
+Total time:     67.406853199
+Avg. time:      0.0834243232661
+
+
