@@ -81,14 +81,19 @@ def plot_lambda_versus_avg_del_time(data):
 	means = [np.mean(raw_data[0]), np.mean(raw_data[1]), np.mean(raw_data[2])]
 	stds = [np.std(raw_data[0]), np.std(raw_data[1]), np.std(raw_data[2])]
 
+	m = list(means)
+	m.reverse()
+	s = list(stds)
+	s.reverse()
+
 	print "Lambda vs Avg. stable Del. time"
-	print "Means:", means
-	print "Stds: ", stds
+	print "Means:", m
+	print "Stds: ", s
 	print "\n"
 
-	lb_2_axis = np.linspace(means[0] - 3 * stds[0], means[0] + 3 * stds[0], 10)
-	lb_3_axis = np.linspace(means[1] - 3 * stds[0], means[1] + 3 * stds[1], 10)
-	lb_5_axis = np.linspace(means[2] - 3 * stds[0], means[2] + 3 * stds[2], 10)
+	lb_2_axis = np.linspace(means[2] - 3 * stds[2], means[2] + 3 * stds[2], 10)
+	lb_3_axis = np.linspace(means[1] - 3 * stds[1], means[1] + 3 * stds[1], 10)
+	lb_5_axis = np.linspace(means[0] - 3 * stds[0], means[0] + 3 * stds[0], 10)
 	x_axis = [2, 3, 5]
 
 	plt.title("Lambda vs Avg. stable Del. time")
@@ -111,14 +116,19 @@ def plot_lambda_versus_efficiency(data):
 	means = [np.mean(raw_data[0]), np.mean(raw_data[1]), np.mean(raw_data[2])]
 	stds = [np.std(raw_data[0]), np.std(raw_data[1]), np.std(raw_data[2])]
 
+	m = list(means)
+	m.reverse()
+	s = list(stds)
+	s.reverse()
+
 	print "Lambda vs Efficiency"
-	print "Means:", means
-	print "Stds: ", stds
+	print "Means:", m
+	print "Stds: ", s
 	print "\n"
 
-	lb_2_axis = np.linspace(means[0] - 3 * stds[0], means[0] + 3 * stds[0], 10)
-	lb_3_axis = np.linspace(means[1] - 3 * stds[0], means[1] + 3 * stds[1], 10)
-	lb_5_axis = np.linspace(means[2] - 3 * stds[0], means[2] + 3 * stds[2], 10)
+	lb_2_axis = np.linspace(means[2] - 3 * stds[2], means[2] + 3 * stds[2], 10)
+	lb_3_axis = np.linspace(means[1] - 3 * stds[1], means[1] + 3 * stds[1], 10)
+	lb_5_axis = np.linspace(means[0] - 3 * stds[0], means[0] + 3 * stds[0], 10)
 	x_axis = [2, 3, 5]
 
 	plt.title("Lambda vs Efficiency")

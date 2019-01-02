@@ -43,7 +43,7 @@ if __name__ == '__main__':
 	packets_per_node = int(sys.argv[1])
 	topo_type = int(sys.argv[2])
 	period = float(sys.argv[3])
-	poisson = sys.argv[4]
+	poisson = float(sys.argv[4]) if sys.argv[4] != 'None' else None
 
 	sequence_list = range(1, 5 * packets_per_node + 1)
 

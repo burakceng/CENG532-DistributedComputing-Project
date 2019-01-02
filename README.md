@@ -1,93 +1,23 @@
 # CENG532-DistributedComputing-Project
 *****************************************************************
-THE TOPOLOGY and CONFIGURATION:
-- In physical sense, the topology is a star network; however, the 
-experiments will assume a different logical topology, which forms a 
-ring network, i.e. Chord with each node having 2 neighbours only.
 
-- For the sake of simplicity, the naming convention of the nodes 
-in the network is set as 'Ni' for i-th node, e.g. 'N4' for the 4-th
-node.
+**Contributors**: 
+* burakceng (Burak Hocaoglu, 2035988)
+* robofoxy (M. Rasit Ozdemir, 1942606)
 
-- Each node has a list of sequence numbers of equal length, where 
-the numbers are randomly sampled from a range of numbers without 
-replacement. For example, a topology of 5 nodes is given and an 
-experiment will consist of 10 packets that are shared across 
-all nodes in the network, i.e. each node will have 10 / 5 = 2 
-packets to multicast its neighbours. The following is a valid 
-example of how the sequence numbers can be shared:
-	-- Sequence number range: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and 
-	-- Node N1 has {3, 6}, 
-	-- Node N2 has {7, 9}, 
-	-- Node N3 has {2, 10}, 
-	-- Node N4 has {1, 5} and 
-	-- Node N5 has {4, 8}.
-	In this case, N4 will be the initiator of whole experiment, 
-	since it holds the smallest sequence number, 1.
-*****************************************************************
+This repo is built for the Term Project of the course CENG532 - Distributed Computing Systems offered by Department of Computer Engineering at Middle East Technical University (METU), Ankara, TURKEY.
 
-*****************************************************************
-NODE STRUCTURE:
-- Each node fundamentally has the following:
-	-- Id: an integer used in determining the port numbers as 
-			a convention
-	-- Name: the name of node in the network, a string
-	-- Sequence List: a list of sequence numbers that the node 
-						will be multicasting
-	-- Interfaces: a dict of the neighbours' names mapped to 
-					the particular interface for communication
-	-- Socks: a dict of sockets to initiate communication with 
-				the neighbours
-	-- Broadcast Sock: a socket to broadcast heartbeat messages 
-						to check whether a node is alive
-	-- Clock: a dict of logical clocks for each node
-	-- Queue: a queue of incoming packets that are to be 'delivered'
-	-- and some more helper variables, data structures, locks etc.
-*****************************************************************
+The aim of the project is to design a reliable multicast (or atomic broadcast) protocol/algorithm that aims to solve the naturally impossible problem of establishing a coordination and consensus over an asynchronously operating P2P network. The aim is to solve the problem by making assumptions and restricting the solution space so that the complexity of the problem is reduced to a feasible level. Whole projevt is designed for the distributed network simulation environment **Mininet**. The project makes use of Mininet's Python API and the actual source code consists of Python language.
 
-*****************************************************************
-PACKET CONTENT:
-- Type: Packet type
-		-- Multicast: 1
-		-- Multicast ACK: 2
-		-- Deliver Request: 4
-		-- Deliver ACK: 8
-		-- Heartbeat: 16
-		-- Heartbeat ACK: 32
-- Source: Node name
-- Destination: A list of names of receiver nodes
-- SequenceNumber: Sequence number of the packet
-- Timestamp: Global timestamp w.r.to the CPU clock
-- Vector: Logical clock of the sender node(advanced 1 unit in
-			corresponding entry)
-*****************************************************************
+For technical and design details, experiment types and results, please refer to the report located in *CENG532-ProjectReport* directory
 
-*****************************************************************
-EXECUTION PRINCIPLE:
-- Each node periodically sends multicast messages with its logical 
-clock for synchronization to its all 'logical' neighbours, i.e. 
-w.r.to the logical ring network.
+**To Experiment**:
+* Make sure Mininet is properly installed into your computer or VM etc. For this, please refer to http://mininet.org/.
+* USAGE: in Mininet's terminal type **sudo python script.py < # of packets per node > < topology type > < period > < lambda >**
+* Tips for usage:
+	* # of packets per node: e.g. if given 5, each node/process will multicast 5 messages (in total of 5x5 = 25 messages will be multicasted, excluding ACKs and delivery requests)
+	* topology type: there are 3 types described in the project report changing in number of neighbours per node, refer to the *configurationX.xml* files and just give the number of it, e.g. if configuration3.xml is decided, just type 3.
+	* period: the period of nodes multicasting their messages or the delay between 2 multicast procedures, under normal circumstances nodes will use this period
+	* lambda: If you decide to experiment with uniform period, type **None** for lambda; otherwise, for poisson distributed multicast delays, enter a positive value here and please try to be feasible with it as poisson distribution can cause with very big delays
 
-- If the receiving group has received the message w/o any errors, 
-then each node in that group will send a Multicast ACK message to 
-indicate that it is ready to 'deliver' the message to its application 
-layer.
-
-- If the multicast initiator receive a Multicast ACK and the sequence 
-numbers match, then the sender sets the corresponding neighbour entry 
-of its ACK-table to True. When all entries of that table is set to 
-True, then the initiator can multicast a Delivery Request to the 
-receiving group of interest.
-
-- Upon receiving the Delivery Request from the initiator, the receiving 
-group will process the packet previously received through multicast 
-and update their logical clocks accordingly. After having updated, 
-each node in the receiving group will send a Delivery ACK message to 
-the initiator indicating that it is ready to receive the next regular 
-message, i.e. packet with type 1.
-*****************************************************************
-
-*****************************************************************
-EXECUTION UNDER A PACKET LOSS:
-- To be filled ...
-*****************************************************************
+Finally, the experiments are limited to run only 5 minutes per node, when the 5-minute time is expired, the processes that run the nodes will be killed and after that point an extra of 30 seconds will be used for the Mininet script to tidy up what has obtained from that run and write the results into files *outputX.txt*, where X indicates the number/id of the node that generated that result.

@@ -56,7 +56,7 @@ The first logical network we designed will form a Chord-like topology without ma
 
 \begin{figure}[h]
 \centering
-   \includegraphics[scale=0.60]{conf2.png}
+   \includegraphics[scale=0.50]{conf2.png}
    \caption{First logical network topology (Chord-like)}
    \label{chord}
 \end{figure}
@@ -67,7 +67,7 @@ The second logical network we designed will form a semi-star topology. Almost ev
 
 \begin{figure}[h]
 \centering
-   \includegraphics[scale=0.60]{conf3.png}
+   \includegraphics[scale=0.50]{conf3.png}
    \caption{Second logical network topology (semi-star)}
    \label{semi-star}
 \end{figure}
@@ -156,12 +156,12 @@ Observing Figure \ref{gsvsavg}, we can observe that since the delivery time is c
 % Lambda vs Avg. Delivery Time
 \begin{figure}[h]
 \centering
-   \includegraphics[scale=0.45]{Lamda_vs_AvgDT_Real.png}
+   \includegraphics[scale=0.45]{Lambda_vs_AvgDT_Final.png}
    \caption{Lambda vs. Avg. stable Delivery Time within 95\% CI}
    \label{lbvsavg}
 \end{figure}
 
-The experiment whose results are associated with the Figure \ref{lbvsavg}, utilized a Poisson distribution with different lambda values chosen as 2, 3 and 5. Observing the results, the average stable delivery time is roughly the same across different lambda values, with the $\lambda = 2$ case being slightly higher overall because of a slightly higher standard deviation. For this experiment, the means and standard deviations are $0.120 \pm 0.110$, $0.117 \pm 0.103$ and $0.126 \pm 0.102$ for lambda values 2, 3 and 5, respectively. The total number of packets exchanged is 53207, having conducted 10 experiments per value, in one experiment an average of ~1774 packets have been exchanged.
+The experiment whose results are associated with the Figure \ref{lbvsavg}, utilized a Poisson distribution with different lambda values chosen as 2, 3 and 5. Observing the results, the average stable delivery time is roughly the same across different lambda values, with the $\lambda = 2$ case being slightly higher overall because of a slightly higher standard deviation. For this experiment, the means and standard deviations are $0.126 \pm 0.102$, $0.117 \pm 0.103$ and $0.120 \pm 0.110$ for lambda values 2, 3 and 5, respectively. The total number of packets exchanged is 53207, having conducted 10 experiments per value, in one experiment an average of ~1774 packets have been exchanged.
 
 % Group Size vs Efficiency
 \begin{figure}[h]
@@ -176,12 +176,14 @@ As for the efficiency analysis, observing its relationship with group size param
 % Lambda vs Efficiency
 \begin{figure}[h]
 \centering
-   \includegraphics[scale=0.45]{Lambda_vs_Eff_Real.png}
+   \includegraphics[scale=0.45]{Lambda_vs_Eff_Final.png}
    \caption{Lambda vs. Efficiency within 95\% CI}
    \label{lbvseff}
 \end{figure}
 
-In addition to regular group size effect, we also conducted experiments on the effect of different lambda values on the network efficiency, Figure \ref{lbvseff}. Since the group size is fixed (fixed to 2), the differences are not considerable. As it was in the lambda vs average stable delivery time experiments, the case of $\lambda = 2$ is slightly higher overall. The corresponding means and standard deviations are $28.398 \pm 4.660$, $28.480 \pm 3.443$ and $28.594 \pm 3.963$ for lambda values 2, 3 and 5, respectively. The statistics for the number of experiments conducted and the packet count analysis is similar to the experiments of the relationship between lambda and average stable delivery time.
+In addition to regular group size effect, we also conducted experiments on the effect of different lambda values on the network efficiency, Figure \ref{lbvseff}. Since the group size is fixed (fixed to 2), the differences are not considerable. As it was in the lambda vs average stable delivery time experiments, the case of $\lambda = 2$ is slightly higher overall. The corresponding means and standard deviations are $28.594 \pm 3.963$, $28.480 \pm 3.443$ and $28.398 \pm 4.660$ for lambda values 2, 3 and 5, respectively. The statistics for the number of experiments conducted and the packet count analysis is similar to the experiments of the relationship between lambda and average stable delivery time.
+
+As a final observation, one can observe that the results of average stable delivery time experiments has some negative values. Under normal circumstances, if the time synchronization was flawless and the nodes/processes ran in an order which can be converted into a sequential context, those negative values would not be visible; however, since the nodes operate asynchronously even the synchronization of global time fails within the context switches and several delays in the network. Briefly, those negative values are caused by the unsynchronized state of the nodes in the network.
 
 \begin{thebibliography}{99}
 
