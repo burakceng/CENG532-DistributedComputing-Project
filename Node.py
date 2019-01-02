@@ -613,7 +613,7 @@ if __name__ == '__main__':
 	slist = map(int, sys.argv[3:count + 3])
 	period = float(sys.argv[count + 3])
 	topoFile = sys.argv[count + 4]
-	dpoisson = (sys.argv[count + 5] == 'True')
+	dpoisson = float(sys.argv[count + 5]) if sys.argv[count + 5] != 'None' else None
 	logFile = sys.argv[count + 6]
 	topology = parseTopology(topoFile)
 	this_node = MulticastNode(name, slist, topology, period, logFile, dpoisson)

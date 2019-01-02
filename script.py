@@ -91,11 +91,11 @@ if __name__ == '__main__':
 #	print h4.cmd('ifconfig -a')
 #	print h5.cmd('ifconfig -a')
 
-	h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h1.txt >> output1.txt &')
-	h2.cmd('sudo python Node.py h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h2.txt >> output2.txt &')
-	h3.cmd('sudo python Node.py h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h3.txt >> output3.txt &')
-	h4.cmd('sudo python Node.py h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h4.txt >> output4.txt &')
-	h5.cmd('sudo python Node.py h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + poisson + ' LOG_h5.txt >> output5.txt &')
+	h1.cmd('sudo python Node.py h1 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h1'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + str(poisson) + ' LOG_h1.txt >> output1.txt &')
+	h2.cmd('sudo python Node.py h2 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h2'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + str(poisson) + ' LOG_h2.txt >> output2.txt &')
+	h3.cmd('sudo python Node.py h3 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h3'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + str(poisson) + ' LOG_h3.txt >> output3.txt &')
+	h4.cmd('sudo python Node.py h4 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h4'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + str(poisson) + ' LOG_h4.txt >> output4.txt &')
+	h5.cmd('sudo python Node.py h5 ' + str(packets_per_node) + ' ' + ' '.join(map(str, sequence_dict['h5'])) + ' ' + str(period) + ' ' + getFileName(topo_type) + ' ' + str(poisson) + ' LOG_h5.txt >> output5.txt &')
 	
 	time.sleep(330)
 	sys.exit(0)
